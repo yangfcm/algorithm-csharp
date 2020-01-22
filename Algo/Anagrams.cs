@@ -41,7 +41,7 @@ angagrams('Hi, there', 'Bye, there') --> false
 		{
 			char[] arr = str.ToCharArray();
 			Array.Sort(arr);
-			Console.WriteLine(new string(arr));
+			// Console.WriteLine(new string(arr));
 			return new string(arr);
 		}
 	}

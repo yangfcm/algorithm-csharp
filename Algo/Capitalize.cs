@@ -13,7 +13,7 @@ namespace Algo
 			string capStr;
 			capStr = str[0].ToString().ToUpper();
 			// If the left side of the current letter is a blank, it means it is the first letter of a word,
-			// Make the uppercase.
+			// Make it uppercase.
 			for (int i = 1; i < str.Length; i++)
 			{
 				if (str[i - 1] == ' ')

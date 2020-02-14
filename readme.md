@@ -26,8 +26,10 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 - **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
 
 - **Sorting** Implement the three most common sorting methods - `Sorting.cs`
-- **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `twoSum.js`
-- **Remove Vowels(L)** Remove vowels of a string - `removeVowels.js`
+- **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `twoSum.cs`
+- **Remove Vowels(L)** Remove vowels of a string - `removeVowels.cs`
+- **Intersect Arrays** Gompute two arrays' intersection. - `intersect.cs`
+- **Moving Aeroes** Move zeroes to the end of an array - `moveZeroes.cs`
 
 ## Development Environment
 

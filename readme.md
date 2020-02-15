@@ -26,10 +26,14 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 - **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
 
 - **Sorting** Implement the three most common sorting methods - `Sorting.cs`
-- **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `twoSum.cs`
-- **Remove Vowels(L)** Remove vowels of a string - `removeVowels.cs`
-- **Intersect Arrays** Gompute two arrays' intersection. - `intersect.cs`
-- **Moving Aeroes** Move zeroes to the end of an array - `moveZeroes.cs`
+- **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.cs`
+- **Remove Vowels(L)** Remove vowels of a string - `RemoveVowels.cs`
+- **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.cs`
+- **Moving Zeroes** Move zeroes to the end of an array - `MoveZeroes.cs`
+- **Plus One** - Given a non-empty array of digits representing a non-negative integer, plus one to the integer - `PlusOne.cs`
+- **Remove Duplicates** - Remove duplicated numbers from an array - `RemoveDuplicates.cs`
+- **Rotate Array** - Rotate an array to the right by k steps in place - `RotateArray.cs`
+- **Rotate Image** - Rotate an image represented by an n*n array - `RotateImage.cs`
 
 ## Development Environment
 

@@ -24,7 +24,7 @@ namespace Test
 		[DataRow(2, ExpectedOutputWith2)]
 		[DataRow(3, ExpectedOutputWith3)]
 		[DataRow(4, ExpectedOutputWith4)]
-		public void TestSteps(int n, string expectedOutput)
+		public void Test(int n, string expectedOutput)
 		{
 			Steps.Run(n);
 			var result = this.sw.ToString();

@@ -35,6 +35,7 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 - **Rotate Array** - Rotate an array to the right by k steps in place - `RotateArray.cs`
 - **Rotate Image** - Rotate an image represented by an n*n array - `RotateImage.cs`
 - **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.cs`
+- **Max Profit** - Given an array with each number representing a stock price for one day, find the max profit - `MaxProfit.cs`
 
 ## Development Environment
 

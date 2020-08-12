@@ -51,6 +51,7 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 `/Ds`
 
+- **QueueFromStack** Implement Queue class's Enqueue(), Dequeue() and Peek() method ONLY using two Stacks - `QueueFromStack.cs`
 - **Weave** "Weave" two queues - `Weave.cs`
 
 ## Development Environment

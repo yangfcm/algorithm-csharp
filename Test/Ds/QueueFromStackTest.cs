@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algo;
+using Algo.Ds;
 
 namespace Test
 {

@@ -14,7 +14,7 @@
  * c.next = b;
  * circular(l) // true
  */
-namespace Algo
+namespace Algo.Ds.LinkedList
 {
   public class Circular<T>
   {

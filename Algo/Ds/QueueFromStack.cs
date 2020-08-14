@@ -12,7 +12,7 @@ using System.Collections.Generic;
  *     q.remove(); // returns 2
  */
 
-namespace Algo
+namespace Algo.Ds
 {
   public class QueueFromStack<T>
   {

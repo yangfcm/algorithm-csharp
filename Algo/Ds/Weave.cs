@@ -7,7 +7,7 @@ using System.Collections.Generic;
  * The function should handle queues of different lengths without inserting 'undefined' into the new one
 */
 
-namespace Algo
+namespace Algo.Ds
 {
   public class Weave
   {

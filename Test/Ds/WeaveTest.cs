@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
-using Algo;
+using Algo.Ds;
 
 namespace Test
 {

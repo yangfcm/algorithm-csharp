@@ -8,7 +8,7 @@ using System;
  * Remove, RemoveFirst, RemoveLast,
  * Find, FindLast and Clear
  */
-namespace Algo
+namespace Algo.Ds.LinkedList
 {
   public class Node<T>
   {

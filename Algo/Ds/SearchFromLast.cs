@@ -3,7 +3,7 @@
  * from the last node in the list. 获取Linked list中倒数第n个节点
  */
 
-namespace Algo
+namespace Algo.Ds.LinkedList
 {
   public class SearchFromLast<T>
   {

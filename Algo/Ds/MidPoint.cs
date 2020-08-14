@@ -7,7 +7,7 @@
  * DO NOT retrieve the size of the list
  * Only iterate through the list one time 
 */
-namespace Algo
+namespace Algo.Ds.LinkedList
 {
   public class MidPoint<T>
   {

@@ -14,6 +14,18 @@ namespace Test
       list = new MyLinkedList<string>();
     }
 
+    private void PopulateList()
+    { // Populate list with data "a", "b", "c", "d"
+      if (list.Count > 0)
+      {
+        list.Clear();
+      }
+      list.AddLast("a");
+      list.AddLast("b");
+      list.AddLast("c");
+      list.AddLast("d");
+    }
+
     [TestMethod]
     public void TestNodeConstructor()
     {
@@ -52,13 +64,29 @@ namespace Test
     }
 
     [TestMethod]
+    public void TestAdd()
+    {
+      list.Add("first", 0);  // Test add node to an empty list
+      Assert.AreEqual(list.FindFirst().Data, "first");
+      list.Add("second", 0);  // Test add node at index 0 of a non-empty list
+      Assert.AreEqual(list.Find(0).Data, "second");
+      Assert.AreEqual(list.Find(1).Data, "first");
+      list.Add("middle", 1); // Test add node in the middle of a non-empty list
+      Assert.AreEqual(list.Find(0).Data, "second");
+      Assert.AreEqual(list.Find(1).Data, "middle");
+      Assert.AreEqual(list.Find(2).Data, "first");
+      list.Add("last", 3);  // Test add node at the tail of list
+      Assert.AreEqual(list.Find(3).Data, "last");
+      list.Add("final", 99);  // Test add node at the tail of list if index is out of the boundary
+      Assert.AreEqual(list.Find(4).Data, "final");
+    }
+
+    [TestMethod]
     public void TestCount()
     {
       // var list = new MyLinkedList<string>();
-      list.AddFirst("a");
-      list.AddFirst("b");
-      list.AddFirst("c");
-      Assert.AreEqual(list.Count, 3);
+      PopulateList();
+      Assert.AreEqual(list.Count, 4);
     }
 
     [TestMethod]
@@ -84,15 +112,23 @@ namespace Test
     }
 
     [TestMethod]
+    public void TestFind()
+    {
+      Assert.AreEqual(list.Find(1), null);
+      PopulateList();
+      Assert.AreEqual(list.Find(0).Data, "a");
+      Assert.AreEqual(list.Find(1).Data, "b");
+      Assert.AreEqual(list.Find(2).Data, "c");
+      Assert.AreEqual(list.Find(3).Data, "d");
+      Assert.AreEqual(list.Find(99), null);
+    }
+
+    [TestMethod]
     public void TestClear()
     {
       // var list = new MyLinkedList<string>();
-      list.AddFirst("a");
-      list.AddFirst("b");
-      list.AddFirst("c");
-      list.AddFirst("d");
-      list.AddFirst("e");
-      Assert.AreEqual(list.Count, 5);
+      PopulateList();
+      Assert.AreEqual(list.Count, 4);
       list.Clear();
       Assert.AreEqual(list.Count, 0);
     }
@@ -140,13 +176,33 @@ namespace Test
     {
       // Test RemoveLast() if linked list has more than one elements
 
-      list.AddFirst("a");
-      list.AddFirst("b");
-      list.AddFirst("c");
-      list.AddFirst("d");
+      PopulateList();
       list.RemoveLast();
       Assert.AreEqual(list.Count, 3);
-      Assert.AreEqual(list.FindLast().Data, "b");
+      Assert.AreEqual(list.FindLast().Data, "c");
+    }
+
+    [TestMethod]
+    public void TestRemove()
+    {
+      PopulateList();
+      Assert.AreEqual(list.Find(1).Data, "b");
+      list.Remove(1);
+      Assert.AreEqual(list.Find(1).Data, "c");
+      list.Remove(99);
+      // Should do nothing if it attempts to remove a node beyond boundary
+      Assert.AreEqual(list.Find(1).Data, "c");
+    }
+
+    [TestMethod]
+    public void TestForEach()
+    {
+      PopulateList();
+      list.ForEach((node, counter) => node.Data += "z");  // Add z to each element
+      Assert.AreEqual(list.Find(0).Data, "az");
+      Assert.AreEqual(list.Find(1).Data, "bz");
+      Assert.AreEqual(list.Find(2).Data, "cz");
+      Assert.AreEqual(list.Find(3).Data, "dz");
     }
 
   }

@@ -1,4 +1,3 @@
-using System;
 /**
  * Midepoint
  * Make use of the MyLinkedList to find the middle node of a linked list.

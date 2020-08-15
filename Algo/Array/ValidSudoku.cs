@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 
-namespace Algo
+namespace Algo.Arr
 {
-	/**
+  /**
 	* Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
  * 1 - Each row must contain the digits 1-9 without repetition.
  * 2 - Each column must contain the digits 1-9 without repetition.
@@ -36,51 +36,51 @@ namespace Algo
 	]
 	Output: false
 	 */
-	public class ValidSudoku
-	{
-		static public bool Run(string[,] board)
-		{
-			int n = 9;
-			for (int i = 0; i < n; i++)
-			{
-				List<string> row = new List<string>();
-				List<string> col = new List<string>();
-				List<string> box = new List<string>();
-				for (int j = 0; j < n; j++)
-				{
-					if (board[i, j] != ".")
-					{
-						// Check row to see if valid
-						if (row.IndexOf(board[i, j]) >= 0)
-						{
-							return false;
-						}
-						row.Add(board[i, j]);
-					}
+  public class ValidSudoku
+  {
+    static public bool Run(string[,] board)
+    {
+      int n = 9;
+      for (int i = 0; i < n; i++)
+      {
+        List<string> row = new List<string>();
+        List<string> col = new List<string>();
+        List<string> box = new List<string>();
+        for (int j = 0; j < n; j++)
+        {
+          if (board[i, j] != ".")
+          {
+            // Check row to see if valid
+            if (row.IndexOf(board[i, j]) >= 0)
+            {
+              return false;
+            }
+            row.Add(board[i, j]);
+          }
 
-					if (board[j, i] != ".")
-					{
-						// Check col to see if valid
-						if (col.IndexOf(board[j, i]) >= 0)
-						{
-							return false;
-						}
-						col.Add(board[j, i]);
-					}
+          if (board[j, i] != ".")
+          {
+            // Check col to see if valid
+            if (col.IndexOf(board[j, i]) >= 0)
+            {
+              return false;
+            }
+            col.Add(board[j, i]);
+          }
 
-					string elBox = board[3 * (i / 3) + (j / 3), 3 * (i % 3) + (j % 3)];
-					if (elBox != ".")
-					{
-						// Check box to see if valid
-						if (box.IndexOf(elBox) >= 0)
-						{
-							return false;
-						}
-						box.Add(elBox);
-					}
-				}
-			}
-			return true;
-		}
-	}
+          string elBox = board[3 * (i / 3) + (j / 3), 3 * (i % 3) + (j % 3)];
+          if (elBox != ".")
+          {
+            // Check box to see if valid
+            if (box.IndexOf(elBox) >= 0)
+            {
+              return false;
+            }
+            box.Add(elBox);
+          }
+        }
+      }
+      return true;
+    }
+  }
 }

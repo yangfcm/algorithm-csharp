@@ -1,6 +1,6 @@
 using System;
 
-namespace Algo
+namespace Algo.String
 {
   /**
 	Return true if a given string is palindrome and false if not

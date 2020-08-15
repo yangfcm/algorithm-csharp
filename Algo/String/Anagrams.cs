@@ -1,7 +1,7 @@
 using System;
 using System.Text.RegularExpressions;
 
-namespace Algo
+namespace Algo.String
 
 /**
 Anagram
@@ -14,35 +14,35 @@ anagrams('RAIL! SAFETY!', 'fairy tales')  --> true
 angagrams('Hi, there', 'Bye, there') --> false
  */
 {
-	public class Anagrams
-	{
-		static public bool Main(string str1, string str2)
-		{
-			string sortedStr1 = Alphabetize(CleanString(str1));
-			string sortedStr2 = Alphabetize(CleanString(str2));
-			return sortedStr1 == sortedStr2;
-		}
+  public class Anagrams
+  {
+    static public bool Main(string str1, string str2)
+    {
+      string sortedStr1 = Alphabetize(CleanString(str1));
+      string sortedStr2 = Alphabetize(CleanString(str2));
+      return sortedStr1 == sortedStr2;
+    }
 
-		/**
+    /**
 			Remove spaces and punctuations of a string and convert it to lowercase
 		*/
-		private static string CleanString(string str)
-		{
-			string pattern = @"\W";
-			string clearedStr = Regex.Replace(str, pattern, "");
-			return clearedStr.ToLower();
-		}
+    private static string CleanString(string str)
+    {
+      string pattern = @"\W";
+      string clearedStr = Regex.Replace(str, pattern, "");
+      return clearedStr.ToLower();
+    }
 
-		/**
+    /**
 		 Sort a string on alphabetic order
 		 e.g. 'sad' -> 'ads'
 		 */
-		private static string Alphabetize(string str)
-		{
-			char[] arr = str.ToCharArray();
-			Array.Sort(arr);
-			// Console.WriteLine(new string(arr));
-			return new string(arr);
-		}
-	}
+    private static string Alphabetize(string str)
+    {
+      char[] arr = str.ToCharArray();
+      Array.Sort(arr);
+      // Console.WriteLine(new string(arr));
+      return new string(arr);
+    }
+  }
 }

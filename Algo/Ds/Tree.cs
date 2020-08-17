@@ -87,6 +87,48 @@ namespace Algo.Ds.Tree
         fn(node);
       }
     }
+
+    /* Return an array to show the width of each level of the tree.
+    (How many elements are there on each level of a tree)
+    * --- Example
+    * Given:
+    *     0
+    *   / |  \
+    * 1   2   3
+    * |       |
+    * 4       5
+    * Should return: [1, 3, 2]
+    */
+    public List<int> levelWidth()
+    {
+      string STOP_SIGN = "this is a stop sign to indicate the end of a level of tree";
+      List<int> widths = new List<int>(new int[] { 0 });
+      // widths list is to hold the width of each level
+      // It starts from a single element of 0.
+      List<dynamic> treeList = new List<dynamic>();
+      treeList.Add(Root);
+      treeList.Add(new Node(STOP_SIGN));  // STOP_SIGN is an arbitary letter used as a stop sign to indicate the end of a level
+      while (treeList.Count > 1)
+      { // Traverse the tree using BFS.
+        // If treeList has only one element, which should be STOP SIGN, it means the traversal of tree is finished 
+        var node = treeList.ToArray()[0];
+        treeList.RemoveAt(0);  // Get the first element and remove it from list
+        if (node.Data == STOP_SIGN)
+        { // If the node returned is STOP SIGN, it means it reaches the end of the level
+          widths.Add(0);
+          treeList.Add(new Node(STOP_SIGN)); // Put the STOP SIGN to the end of the array. 
+        }
+        else
+        {
+          foreach (Node childNode in node.Children)
+          {
+            treeList.Add(childNode);
+          }
+          widths[widths.Count - 1]++; // Increment the width number
+        }
+      }
+      return widths;
+    }
   }
 }
 

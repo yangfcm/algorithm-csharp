@@ -75,5 +75,12 @@ namespace Test
       var expected = new dynamic[] { "a", "b", "e", "f", "c", "d", "g" };
       Assert.IsTrue(expected.SequenceEqual(traverseResult.ToArray()));
     }
+
+    [TestMethod]
+    public void TestLevelWidth()
+    {
+      var expectedWidth = new int[] { 1, 3, 3 };
+      Assert.IsTrue(expectedWidth.SequenceEqual(tree.levelWidth()));
+    }
   }
 }

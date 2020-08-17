@@ -1,4 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
+using System.Linq;
+using System;
 using Algo.Ds.Tree;
 
 namespace Test
@@ -7,10 +10,22 @@ namespace Test
   public class TreeNodeTest
   {
     Node node;
+    Tree tree;
+    List<dynamic> traverseResult;
+
     [TestInitialize]
     public void TestInitialize()
     {
       node = new Node("a");
+      traverseResult = new List<dynamic>();
+      tree = new Tree();
+      tree.Root = new Node("a");
+      tree.Root.Add("b");
+      tree.Root.Add("c");
+      tree.Root.Add("d");
+      tree.Root.Children[0].Add("e");
+      tree.Root.Children[0].Add("f");
+      tree.Root.Children[2].Add("g");
     }
 
     [TestMethod]
@@ -37,6 +52,28 @@ namespace Test
       node.Remove("c");
       Assert.AreEqual(node.Children.Count, 2);
       Assert.AreEqual(node.Children.FindIndex(node => node.Data == "c"), -1);
+    }
+
+    [TestMethod]
+    public void TestTraverseBfs()
+    {
+      tree.traverseBfs((Node node) =>
+      {
+        traverseResult.Add(node.Data);
+      });
+      var expected = new dynamic[] { "a", "b", "c", "d", "e", "f", "g" };
+      Assert.IsTrue(expected.SequenceEqual(traverseResult.ToArray()));
+    }
+
+    [TestMethod]
+    public void TestTraverseDfs()
+    {
+      tree.traverseDfs((Node node) =>
+      {
+        traverseResult.Add(node.Data);
+      });
+      var expected = new dynamic[] { "a", "b", "e", "f", "c", "d", "g" };
+      Assert.IsTrue(expected.SequenceEqual(traverseResult.ToArray()));
     }
   }
 }

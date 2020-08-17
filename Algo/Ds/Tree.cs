@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 /**
  * Tree data structure
@@ -39,8 +40,53 @@ namespace Algo.Ds.Tree
     }
   }
 
-  public class Tree<T>
+  public class Tree
   {
+    public Node Root { get; set; }
+    public delegate void Callback(Node node);
+    public Tree()
+    {
+      Root = null;
+    }
 
+    // Traverse by BFS
+    public void traverseBfs(Callback fn)
+    {
+      var treeList = new List<Node>();
+      treeList.Add(Root);
+      // treeList is used to store elements of the tree by BFS order
+      // Below: implement BFS traversal
+      while (treeList.Count > 0)
+      {
+        Node node = treeList.ToArray()[0]; // Take the first element out of the array
+        treeList.RemoveAt(0);
+        foreach (Node childNode in node.Children)
+        {
+          treeList.Add(childNode);
+        }
+        fn(node);
+      }
+    }
+
+    public void traverseDfs(Callback fn)
+    {
+      var treeList = new List<Node>();
+      treeList.Add(Root);
+      while (treeList.Count > 0)
+      {
+        Node node = treeList.ToArray()[0];
+        treeList.RemoveAt(0);
+        // Very similar to BFS, but instead of put children's elements at the end of the array,
+        // DFS put children's elements at the head. 
+
+        node.Children.Reverse();
+        foreach (Node childNode in node.Children)
+        {
+          treeList.Insert(0, childNode);
+        }
+        fn(node);
+      }
+    }
   }
 }
+

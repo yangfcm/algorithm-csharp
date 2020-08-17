@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using System;
 
 /**
  * Tree data structure
@@ -13,6 +12,9 @@ using System;
  */
 namespace Algo.Ds.Tree
 {
+  /*****************
+  **  Node class  **
+  *****************/
   public class Node
   {
     public dynamic Data { get; set; }
@@ -40,6 +42,9 @@ namespace Algo.Ds.Tree
     }
   }
 
+  /*****************
+  **  Tree class  **
+  *****************/
   public class Tree
   {
     public Node Root { get; set; }

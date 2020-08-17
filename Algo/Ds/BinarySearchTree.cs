@@ -77,13 +77,28 @@ namespace Algo.Ds.Bst
       // Not found:
       return null;
     }
-  }
 
-  /*****************
-  **  BST class  **
-  *****************/
-  public class BinarySearchTree
-  {
+    /* Validate if the Node instance is a BST */
+    public static bool IsBst(Node node, int? min, int? max)
+    {
+      if (max != null && node.Data > max)
+      {
+        return false;
+      }
+      if (min != null && node.Data < min)
+      {
+        return false;
+      }
 
+      if (node.Left != null && IsBst(node.Left, min, node.Data) == false)
+      {
+        return false;
+      }
+      if (node.Right != null && IsBst(node.Right, node.Data, max) == false)
+      {
+        return false;
+      }
+      return true;
+    }
   }
 }

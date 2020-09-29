@@ -35,6 +35,77 @@ namespace Test
     }
 
     [TestMethod]
+    public void TestGetNumberOfVertexes()
+    {
+      Assert.AreEqual(uGraph.GetNumberOfVertexes(), 5);
+      Assert.AreEqual(dGraph.GetNumberOfVertexes(), 5);
+    }
+
+    [TestMethod]
+    public void TestGetNumberOfEdges()
+    {
+
+      Assert.AreEqual(uGraph.GetNumberOfEdges(), 5);
+      Assert.AreEqual(dGraph.GetNumberOfEdges(), 6);
+    }
+
+    [TestMethod]
+    public void TestGetValueByIndex()
+    {
+      Assert.AreEqual(uGraph.GetValueByIndex(0), 1);
+      Assert.AreEqual(uGraph.GetValueByIndex(1), 2);
+      Assert.AreEqual(uGraph.GetValueByIndex(2), 3);
+      Assert.AreEqual(uGraph.GetValueByIndex(3), 4);
+      Assert.AreEqual(uGraph.GetValueByIndex(4), 5);
+
+      Assert.AreEqual(dGraph.GetValueByIndex(0), 1);
+      Assert.AreEqual(dGraph.GetValueByIndex(1), 2);
+      Assert.AreEqual(dGraph.GetValueByIndex(2), 3);
+      Assert.AreEqual(dGraph.GetValueByIndex(3), 4);
+      Assert.AreEqual(dGraph.GetValueByIndex(4), 5);
+    }
+
+    [TestMethod]
+    public void TestInsertEdge()
+    {
+      uGraph.InsertEdge(1, 2);
+      Assert.AreEqual(uGraph.GetNumberOfEdges(), 6);
+      dGraph.InsertEdge(4, 2);
+      Assert.AreEqual(dGraph.GetNumberOfEdges(), 7);
+    }
+
+    [TestMethod]
+    public void TestRemoveEdge()
+    {
+      uGraph.RemoveEdge(0, 1);
+      Assert.AreEqual(uGraph.GetNumberOfEdges(), 4);
+      dGraph.RemoveEdge(0, 1);
+      Assert.AreEqual(dGraph.GetNumberOfEdges(), 5);
+    }
+
+    [TestMethod]
+    public void TestGetMatrix()
+    {
+      var uGraphMatrix = new int[,]{
+        {0,1,0,0,1},
+        {1,0,0,1,0},
+        {0,0,0,1,1},
+        {0,1,1,0,0},
+        {1,0,1,0,0}
+      };
+      CollectionAssert.AreEqual(uGraph.GetMatrix(), uGraphMatrix);
+
+      var dGraphMatrix = new int[,]{
+        {0,1,0,0,1},
+        {0,0,0,1,0},
+        {0,0,0,1,1},
+        {0,0,0,0,0},
+        {1,0,0,0,0}
+      };
+      CollectionAssert.AreEqual(dGraph.GetMatrix(), dGraphMatrix);
+    }
+
+    [TestMethod]
     public void TestSearchDFS()
     {
       var uGraphSearch = uGraph.SearchDFS();

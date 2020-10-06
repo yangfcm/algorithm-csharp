@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algo.Ds;
+using Algo.Ds.StackQueue;
 
 namespace Test
 {

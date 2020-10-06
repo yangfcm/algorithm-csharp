@@ -13,7 +13,7 @@ using System.Collections.Generic;
  * Contain should accept a 'data' argument and return the Node in the tree with the same value
  * If the value isn't in the tree, return null.
  */
-namespace Algo.Ds.Bst
+namespace Algo.Ds.Tree.Bst
 {
   /*****************
   **  Node class  **

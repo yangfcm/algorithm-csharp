@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Ds.StackQueue;
 
-namespace Test
+namespace Test.Ds.StackQueue
 {
   [TestClass]
   public class QueueFromStackTest

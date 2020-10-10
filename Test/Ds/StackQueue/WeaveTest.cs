@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 using Algo.Ds.StackQueue;
 
-namespace Test
+namespace Test.Ds.StackQueue
 {
   [TestClass]
   public class WeaveTest

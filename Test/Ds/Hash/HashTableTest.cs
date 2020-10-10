@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Ds.Hash;
 
-namespace Test
+namespace Test.Ds.Hash
 {
   [TestClass]
   public class HashTableConstructorTest

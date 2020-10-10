@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Arr;
 
-namespace Test
+namespace Test.Algo.Arr
 {
   [TestClass]
   public class IntersectTest

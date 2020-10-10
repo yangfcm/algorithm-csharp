@@ -4,7 +4,7 @@ using System.Linq;
 using System;
 using Algo.Ds.Tree.Bst;
 
-namespace Test
+namespace Test.Ds.Tree.Bst
 {
   [TestClass]
   public class BinarySearchTreeTest

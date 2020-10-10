@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Arr;
 using System;
 
-namespace Test
+namespace Test.Algo.Arr
 {
 
 

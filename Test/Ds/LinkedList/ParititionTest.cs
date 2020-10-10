@@ -2,7 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Ds.LinkedList;
 using System;
 
-namespace Test
+namespace Test.Ds.LinkedList
 {
   [TestClass]
   public class PartitionTest

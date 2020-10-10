@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Ds.LinkedList;
 
-namespace Test
+namespace Test.Ds.LinkedList
 {
   [TestClass]
   public class MidPointTest

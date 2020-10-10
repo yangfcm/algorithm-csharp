@@ -11,27 +11,27 @@ using System.Collections.Generic;
  */
 namespace Algo.Ds.StackQueue
 {
-  public class SetOfStacks
+  public class SetOfStacks<T>
   {
     private int Capacity;
-    private List<Stack<dynamic>> Stacks;
+    private List<Stack<T>> Stacks;
     public SetOfStacks(int capacity)
     {
       Capacity = capacity;
-      Stacks = new List<Stack<dynamic>>();
+      Stacks = new List<Stack<T>>();
     }
 
-    void Push(dynamic data)
+    public void Push(T data)
     {
       if (Stacks.Count == 0)
       {
-        Stacks.Add(new Stack<dynamic>());
+        Stacks.Add(new Stack<T>());
       }
 
-      Stack<dynamic> lastSubStack = Stacks[Stacks.Count - 1];
+      Stack<T> lastSubStack = Stacks[Stacks.Count - 1];
       if (lastSubStack.Count >= Capacity)
       {
-        Stacks.Add(new Stack<dynamic>(new[] { data }));
+        Stacks.Add(new Stack<T>(new[] { data }));
       }
       else
       {
@@ -39,15 +39,15 @@ namespace Algo.Ds.StackQueue
       }
     }
 
-    dynamic Pop()
+    public T Pop()
     {
       if (Stacks.Count == 0)
       {
-        return null;
+        return default(T);
       }
-      Stack<dynamic> lastSubStack = Stacks[Stacks.Count - 1];
-      dynamic popedEl = lastSubStack.Pop();
-      if (lastSubStack.Count == 0)
+      Stack<T> lastSubStack = Stacks[Stacks.Count - 1];
+      T popedEl = lastSubStack.Pop();
+      if (lastSubStack.Count == 0)  // If the stack is empty, remove this stack.
       {
         Stacks.RemoveAt(Stacks.Count - 1);
       }
@@ -65,10 +65,10 @@ namespace Algo.Ds.StackQueue
       interviewer.
       In my implementation, the sub-stack will be removed only when it gets empty.
     */
-    dynamic PopAt(int index)
+    public T PopAt(int index)
     {
-      Stack<dynamic> subStack = Stacks[index];
-      dynamic popedEl = subStack.Pop();
+      Stack<T> subStack = Stacks[index];
+      T popedEl = subStack.Pop();
       if (subStack.Count == 0)
       {
         Stacks.RemoveAt(index);

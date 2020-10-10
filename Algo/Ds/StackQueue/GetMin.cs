@@ -13,7 +13,7 @@ namespace Algo.Ds.StackQueue
    * Solution: Use a temporary stack to save the items in original stack and compare each number.
    * The runtime for this solution is O(n) - n is the size of stack.
   */
-  public class GetMin
+  public class GetMinInStack
   {
     static public int Run(Stack<int> stack)
     {

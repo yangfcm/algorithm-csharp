@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using System;
 /**
  * An animal queue, which holds only dogs and cats, operates on a strictly "fist in, first out" basis.
  * People ust adopt either the first of all animals at the shelter,
@@ -53,18 +53,54 @@ namespace Algo.Ds.StackQueue
 
     public AnimalData DequeueDog()
     {
-      return dogQueue.Peek() != null ? dogQueue.Dequeue() : null;
+      try
+      {
+        return dogQueue.Dequeue();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+        return null;
+      }
     }
 
     public AnimalData DequeueCat()
     {
-      return catQueue.Peek() != null ? catQueue.Dequeue() : null;
+      try
+      {
+        return catQueue.Dequeue();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+        return null;
+      }
     }
 
     public AnimalData DequeueAny()
     {
-      var firstCat = catQueue.Peek();
-      var firstDog = dogQueue.Peek();
+      AnimalData firstCat;
+      AnimalData firstDog;
+      try
+      {
+        firstCat = catQueue.Peek();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+        firstCat = null;
+      }
+      try
+      {
+        firstDog = dogQueue.Peek();
+      }
+      catch (Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+        firstDog = null;
+      }
+      // var firstCat = catQueue.Peek();
+      // var firstDog = dogQueue.Peek();
       if (firstCat == null && firstDog == null) return null;
       if (firstCat != null && firstDog == null) return catQueue.Dequeue();
       if (firstDog != null && firstCat == null) return dogQueue.Dequeue();

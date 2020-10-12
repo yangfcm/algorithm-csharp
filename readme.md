@@ -44,6 +44,9 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 7. **Reverse Integer** Reverse an integer - `ReverseInt.cs`
 8. **Reverse String** Reverse a string - `ReverseStr.cs`
 9. **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
+10. **Check Permutation** Check two strings are permutation - `CheckPermutation.cs`
+11. **Check Unique Characters** Determine if a string has all unique characters - `IsUnique.cs`
+12. **Check One Away** Check if one string is one edit away from the other string - `OneAway.cs`
 
 ## Sorting
 

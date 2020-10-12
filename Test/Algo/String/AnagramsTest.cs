@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.String;
 
-namespace Test
+namespace Test.Algo.String
 {
   [TestClass]
   public class AnagramsTest

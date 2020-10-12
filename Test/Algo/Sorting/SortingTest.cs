@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Sorting;
 
-namespace Test
+namespace Test.Algo.Sorting_
 {
   [TestClass]
   public class SortingTest

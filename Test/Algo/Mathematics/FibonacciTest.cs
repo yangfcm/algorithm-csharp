@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Mathematics;
-namespace Test
+namespace Test.Algo.Mathematic
 {
   [TestClass]
   public class FibonacciTest

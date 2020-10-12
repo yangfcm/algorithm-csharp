@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using Algo.Mathematics;
 
-namespace Test
+namespace Test.Algo.Mathematic
 {
   [TestClass]
   public class FizzBuzzTest

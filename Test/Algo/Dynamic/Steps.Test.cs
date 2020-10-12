@@ -3,7 +3,7 @@ using Algo.Dynamic;
 using System;
 using System.IO;
 
-namespace Test
+namespace Test.Algo.Dynamic
 {
   [TestClass]
   public class StepsTest

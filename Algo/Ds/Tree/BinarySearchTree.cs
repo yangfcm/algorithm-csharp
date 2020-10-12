@@ -1,17 +1,17 @@
-using System.Collections.Generic;
-
 /**
  * Binary Search Tree
  * 1. Implement the Node class to create a binary search tree.
  * The constructor should initialize values 'data', 'left' and 'right'
  * For BST: A node's *left* children's values are all less than the node itself, 
  * while its *right* children's values are bigger. 
- * 2. Implement the 'add' method for the Node class.
- * add should accept an argument 'data', 
+ * 2. Implement the 'Add' method for the Node class.
+ * Add should accept an argument 'data', 
  * then create a new node and add it at the appropriate location in the tree.
- * 3. Implement the 'contain' method for the Node class.
- * Contain should accept a 'data' argument and return the Node in the tree with the same value
+ * 3. Implement the 'Find' method for the Node class.
+ * 'Find' should accept a 'data' argument and return the Node in the tree with the same value
  * If the value isn't in the tree, return null.
+ * 4. Implement the 'IsBst' method for the Node class to examine if the tree is a *Binary Search Search*
+ * If it is, return true; otherwise return false.
  */
 namespace Algo.Ds.Tree.Bst
 {

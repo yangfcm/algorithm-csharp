@@ -8,51 +8,86 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 `/Array`
 
-- **Chunk Array** Given an array and chunk size, divide the array into many subarrays where each subarray is of length size - `ArrayChunk.cs`
-- **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.cs`
-- **Is Sorted** Test if a given array of numbers is sorted - `IsSorted.cs`
-- **Matrix** Produce a spiral matrix - `Matrix.cs`
-- **Missing Number** Take an unsorted array of unique numbers from to n and return the missing number in the sequence - `Missing.cs`
-- **Moving Zeroes** Move zeroes to the end of an array - `MoveZeroes.cs`
-- **Plus One** - Given a non-empty array of digits representing a non-negative integer, plus one to the integer - `PlusOne.cs`
-- **Remove Duplicates** - Remove duplicated numbers from an array - `RemoveDuplicates.cs`
-- **Rotate Array** - Rotate an array to the right by k steps in place - `RotateArray.cs`
-- **Rotate Image** - Rotate an image represented by an n\*n array - `RotateImage.cs`
-- **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.cs`
-- **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.cs`
+1. **Chunk Array** Given an array and chunk size, divide the array into many subarrays where each subarray is of length size - `ArrayChunk.cs`
+2. **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.cs`
+3. **Is Sorted** Test if a given array of numbers is sorted - `IsSorted.cs`
+4. **Matrix** Produce a spiral matrix - `Matrix.cs`
+5. **Missing Number** Take an unsorted array of unique numbers from to n and return the missing number in the sequence - `Missing.cs`
+6. **Moving Zeroes** Move zeroes to the end of an array - `MoveZeroes.cs`
+7. **Plus One** Given a non-empty array of digits representing a non-negative integer, plus one to the integer - `PlusOne.cs`
+8. **Remove Duplicates** Remove duplicated numbers from an array - `RemoveDuplicates.cs`
+9. **Rotate Array** Rotate an array to the right by k steps in place - `RotateArray.cs`
+10. **Rotate Image** Rotate an image represented by an n\*n array - `RotateImage.cs`
+11. **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.cs`
+12. **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.cs`
 
 `/Dynamic`
 
-- **Max Profit** - Given an array with each number representing a stock price for one day, find the max profit - `MaxProfit.cs`
-- **Draw Pyrmid** Print a pyramid shape with n levels using # character and space on its left and right side - `Pyramid.cs`
-- **Draw Steps** Print a step shape with n levels using # character and space(s) on the right - `Steps.cs`
+1. **Max Profit** Given an array with each number representing a stock price for one day, find the max profit - `MaxProfit.cs`
+2. **Draw Pyrmid** Print a pyramid shape with n levels using # character and space on its left and right side - `Pyramid.cs`
+3. **Draw Steps** Print a step shape with n levels using # character and space(s) on the right - `Steps.cs`
 
 `/Math`
 
-- **Fibonacci** Print the n-th number in the fibonacci series - `Fibonacci.cs`
-- **Fizzbuzz** Print the numbers from 1 to N. But for multiples of 3 print 'fizz' instead of the number; for multiples of 5, print 'buzz'; for numbers which are multiples of both 3 and 5, print 'fizzbuzz' - `Fizzbuzz.cs`
-- **Is Prime** Test if a given number is a prime - `IsPrime.cs`
+1. **Fibonacci** Print the n-th number in the fibonacci series - `Fibonacci.cs`
+2. **Fizzbuzz** Print the numbers from 1 to N. But for multiples of 3 print 'fizz' instead of the number; for multiples of 5, print 'buzz'; for numbers which are multiples of both 3 and 5, print 'fizzbuzz' - `Fizzbuzz.cs`
+3. **Is Prime** Test if a given number is a prime - `IsPrime.cs`
 
 `/String`
 
-- **Anagrams** Check to see if two strings are anagrams of each other - `Anagrams.cs`
-- **Capitalize** Capitalize each word in a string - `Capitalize.cs`
-- **Is Balanced** Test if curly braces in a string is matched - `IsBalanced.cs`
-- **Max Character** Get the character that most commonly appears in a given string - `MaxChar.cs`
-- **Palindrome** - `Palindrome.cs`
-- **Remove Vowels(L)** Remove vowels of a string - `RemoveVowels.cs`
-- **Reverse Integer** Reverse an integer - `ReverseInt.cs`
-- **Reverse String** Reverse a string - `ReverseStr.cs`
-- **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
+1. **Anagrams** Check to see if two strings are anagrams of each other - `Anagrams.cs`
+2. **Capitalize** Capitalize each word in a string - `Capitalize.cs`
+3. **Is Balanced** Test if curly braces in a string is matched - `IsBalanced.cs`
+4. **Max Character** Get the character that most commonly appears in a given string - `MaxChar.cs`
+5. **Palindrome** `Palindrome.cs`
+6. **Remove Vowels(L)** Remove vowels of a string - `RemoveVowels.cs`
+7. **Reverse Integer** Reverse an integer - `ReverseInt.cs`
+8. **Reverse String** Reverse a string - `ReverseStr.cs`
+9. **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
+
+## Sorting
 
 `/Sorting`
 
-- **Sorting** Implement the three most common sorting methods - `Sorting.cs`
+1. **Sorting** Implement the three most common sorting methods - `Sorting.cs`
 
-`/Ds`
+## Data structure
 
-- **QueueFromStack** Implement Queue class's Enqueue(), Dequeue() and Peek() method ONLY using two Stacks - `QueueFromStack.cs`
-- **Weave** "Weave" two queues - `Weave.cs`
+`/Ds/Hash`
+
+1. **Hash Table** Implement a hash table - `HashTable.cs`
+
+`/Ds/LinkedList`
+
+1. Implement a linked list - `MyLinkedList.js`
+2. Get the middle node of a linked list - `MidPoint.js`
+3. Check if a linked list is circular - `Circular.js`
+4. Return the nth(starting at 0) node from the tail in a linked list - `SearchFromLast.js`
+5. Remove duplicates from an unsorted linked list - `RemoveDuplicate.js`
+6. Partition a linked list - `Partition.js`
+7. Sum two linked list - `SumLists.js`
+
+`/Ds/StackQueue`
+
+1. Implement Queue class's Enqueue(), Dequeue() and Peek() method ONLY using two Stacks - `QueueFromStack.cs`
+2. "Weave" two queues - `Weave.cs`
+3. Get the minimum number in a stack - `GetMin.js`
+4. Sort a stack - `SortStack.js`
+5. Implement an animal queue - `AnimalQueue.js`
+6. Implement a stack of plates - `SetOfStacks.js`
+
+`/Ds/Tree`
+
+1. Implement a tree and using BFS and DFS to traverse a tree - `Tree.cs`
+2. Get the width of each level of a tree - `Tree.cs`
+3. Implement a binary search tree - `BinarySarchTree.cs`
+4. Validate the binary search tree - `BinarySarchTree.cs`
+5. Create a binary search tree with minimal height based on a ascend-sorted array - `minimalTree.cs`
+6. Create an array of all the nodes at each depth. - `ListOfDepths.cs`
+
+`/Ds/Graph`
+
+1. Implement a graph class and its relevant methods, including DFS and BFS - `Graph.js`
 
 ## Development Environment
 

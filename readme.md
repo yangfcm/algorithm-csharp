@@ -40,13 +40,16 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 3. **Is Balanced** Test if curly braces in a string is matched - `IsBalanced.cs`
 4. **Max Character** Get the character that most commonly appears in a given string - `MaxChar.cs`
 5. **Palindrome** `Palindrome.cs`
-6. **Remove Vowels(L)** Remove vowels of a string - `RemoveVowels.cs`
-7. **Reverse Integer** Reverse an integer - `ReverseInt.cs`
-8. **Reverse String** Reverse a string - `ReverseStr.cs`
-9. **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
-10. **Check Permutation** Check two strings are permutation - `CheckPermutation.cs`
-11. **Check Unique Characters** Determine if a string has all unique characters - `IsUnique.cs`
-12. **Check One Away** Check if one string is one edit away from the other string - `OneAway.cs`
+6. **Check Palindrome Permutation** Check if a string is a permutation of a palindrome - `PalindromePermutation.cs`
+7. **Remove Vowels(L)** Remove vowels of a string - `RemoveVowels.cs`
+8. **Reverse Integer** Reverse an integer - `ReverseInt.cs`
+9. **Reverse String** Reverse a string - `ReverseStr.cs`
+10. **How Many Vowels** Count the number of vowels used in a string - `Vowels.cs`
+11. **Check Permutation** Check two strings are permutation - `CheckPermutation.cs`
+12. **Check Unique Characters** Determine if a string has all unique characters - `IsUnique.cs`
+13. **Check One Away** Check if one string is one edit away from the other string - `OneAway.cs`
+14. **Check String Rotation** Check if one string is the rotation of the other string, using isSubString function - `StringRotation.cs`
+15. **Compress String** Compress a string - `StringCompression.cs`
 
 ## Sorting
 

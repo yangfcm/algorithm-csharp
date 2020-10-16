@@ -20,6 +20,7 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 10. **Rotate Image** Rotate an image represented by an n\*n array - `RotateImage.cs`
 11. **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.cs`
 12. **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.cs`
+13. **Sales by Match** - Determine pairs of socks - `SockMerchant.cs`
 
 `/Dynamic`
 

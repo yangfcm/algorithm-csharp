@@ -28,7 +28,7 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 2. **Draw Pyrmid** Print a pyramid shape with n levels using # character and space on its left and right side - `Pyramid.cs`
 3. **Draw Steps** Print a step shape with n levels using # character and space(s) on the right - `Steps.cs`
 
-`/Math`
+`/Mathematics`
 
 1. **Fibonacci** Print the n-th number in the fibonacci series - `Fibonacci.cs`
 2. **Fizzbuzz** Print the numbers from 1 to N. But for multiples of 3 print 'fizz' instead of the number; for multiples of 5, print 'buzz'; for numbers which are multiples of both 3 and 5, print 'fizzbuzz' - `Fizzbuzz.cs`

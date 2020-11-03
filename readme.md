@@ -66,22 +66,22 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 `/Ds/LinkedList`
 
-1. Implement a linked list - `MyLinkedList.js`
-2. Get the middle node of a linked list - `MidPoint.js`
-3. Check if a linked list is circular - `Circular.js`
-4. Return the nth(starting at 0) node from the tail in a linked list - `SearchFromLast.js`
-5. Remove duplicates from an unsorted linked list - `RemoveDuplicate.js`
-6. Partition a linked list - `Partition.js`
-7. Sum two linked list - `SumLists.js`
+1. Implement a linked list - `MyLinkedList.cs`
+2. Get the middle node of a linked list - `MidPoint.cs`
+3. Check if a linked list is circular - `Circular.cs`
+4. Return the nth(starting at 0) node from the tail in a linked list - `SearchFromLast.cs`
+5. Remove duplicates from an unsorted linked list - `RemoveDuplicate.cs`
+6. Partition a linked list - `Partition.cs`
+7. Sum two linked list - `SumLists.cs`
 
 `/Ds/StackQueue`
 
 1. Implement Queue class's Enqueue(), Dequeue() and Peek() method ONLY using two Stacks - `QueueFromStack.cs`
 2. "Weave" two queues - `Weave.cs`
-3. Get the minimum number in a stack - `GetMin.js`
-4. Sort a stack - `SortStack.js`
-5. Implement an animal queue - `AnimalQueue.js`
-6. Implement a stack of plates - `SetOfStacks.js`
+3. Get the minimum number in a stack - `GetMin.cs`
+4. Sort a stack - `SortStack.cs`
+5. Implement an animal queue - `AnimalQueue.cs`
+6. Implement a stack of plates - `SetOfStacks.cs`
 
 `/Ds/Tree`
 
@@ -94,7 +94,17 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 `/Ds/Graph`
 
-1. Implement a graph class and its relevant methods, including DFS and BFS - `Graph.js`
+1. Implement a graph class and its relevant methods, including DFS and BFS - `Graph.cs`
+
+## Searching
+
+`/Searching`
+
+1. Implement linear search - `LinearSearch.cs`
+2. Implement binary search - `BinarySearch.cs`
+3. Implmenet jump search - `JumpSearch.cs`
+4. Implement interpolation search - `InterpolationSearch.cs`
+5. Implement exponential search - `ExponentialSearch.cs`
 
 ## Development Environment
 

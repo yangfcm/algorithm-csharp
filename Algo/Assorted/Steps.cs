@@ -1,6 +1,6 @@
 using System;
 
-namespace Algo.Dynamic
+namespace Algo.Assorted
 {
   /**
 	Accept a positive number n

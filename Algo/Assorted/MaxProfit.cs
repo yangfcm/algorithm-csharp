@@ -7,7 +7,7 @@ using System.Linq;
  * @param {number[]} prices
  * @return {number}
  */
-namespace Algo.Dynamic
+namespace Algo.Assorted
 {
   public class MaxProfit
   {

@@ -6,33 +6,90 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 ## Algorithms problems content
 
-`/Array`
+`/array` - Problems and solutions about arrays.
 
-1. **Chunk Array** Given an array and chunk size, divide the array into many subarrays where each subarray is of length size - `ArrayChunk.cs`
-2. **Intersect Arrays** Gompute two arrays' intersection. - `Intersect.cs`
-3. **Is Sorted** Test if a given array of numbers is sorted - `IsSorted.cs`
-4. **Matrix** Produce a spiral matrix - `Matrix.cs`
-5. **Missing Number** Take an unsorted array of unique numbers from to n and return the missing number in the sequence - `Missing.cs`
-6. **Moving Zeroes** Move zeroes to the end of an array - `MoveZeroes.cs`
-7. **Plus One** Given a non-empty array of digits representing a non-negative integer, plus one to the integer - `PlusOne.cs`
-8. **Remove Duplicates** Remove duplicated numbers from an array - `RemoveDuplicates.cs`
-9. **Rotate Array** Rotate an array to the right by k steps in place - `RotateArray.cs`
-10. **Rotate Image** Rotate an image represented by an n\*n array - `RotateImage.cs`
-11. **Two sum(L)** Return indices of the two numbers whose sum equals to a target - `TwoSum.cs`
-12. **Valid Sudoku** - Check if a sudoku game is valid - `ValidSudoku.cs`
-13. **Sales by Match** - Determine pairs of socks - `SockMerchant.cs`
+1. `ArrayChunk.cs`
 
-`/Dynamic`
+   Chunk Array: Given an array and chunk size, divide the array into many subarrays where each subarray is of length size.
 
-1. **Max Profit** Given an array with each number representing a stock price for one day, find the max profit - `MaxProfit.cs`
-2. **Draw Pyrmid** Print a pyramid shape with n levels using # character and space on its left and right side - `Pyramid.cs`
-3. **Draw Steps** Print a step shape with n levels using # character and space(s) on the right - `Steps.cs`
+2. `Intersect.cs`
+
+   Compute two arrays' intersection.
+
+3. `IsSorted.cs`
+
+   Test if a given array of numbers is sorted.
+
+4. `Matrix.js`
+
+   Produce a spiral matrix.
+
+5. `Missing.js`
+
+   Missing Number: Take an unsorted array of unique numbers from to n and return the missing number in the sequence.
+
+6. `MovingZeroes.js`
+
+   Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+7. `PlusOne.js`
+
+   Given a non-empty array of digits representing a non-negative integer, plus one to the integer.
+
+8. `RemoveDuplicates.js`
+
+   Given an array with sorted numbers, remove duplicated numbers in-place.
+
+9. `RotateArray.js`
+
+   Given an array, rotate the array to the right by k steps in-place.
+
+10. `RotateImage.js`
+
+    Rotate an image represented by a n\*n array by 90 degrees (clockwise).
+
+11. `SockMerchant.js`
+
+    Find out how many pairs of socks with matching colors(represented by numbers in an array).
+
+12. `TwoSum.js`
+
+    Return indices of the two numbers whose sum equals to a target.
+
+13. `ValidSudoku.js`
+
+    Determine if a 9x9 Sudoku board is valid.
+
+`/Assorted`
+
+1. `MaxProfit.cs`
+
+   Given an array with each number representing a stock price for one day, find the max profit
+
+2. `Pyramid.cs`
+
+   Print a pyramid shape with n levels using # character and space on its left and right side
+
+3. `Steps.cs`
+
+   Print a step shape with n levels using # character and space(s) on the right
 
 `/Mathematics`
 
-1. **Fibonacci** Print the n-th number in the fibonacci series - `Fibonacci.cs`
-2. **Fizzbuzz** Print the numbers from 1 to N. But for multiples of 3 print 'fizz' instead of the number; for multiples of 5, print 'buzz'; for numbers which are multiples of both 3 and 5, print 'fizzbuzz' - `Fizzbuzz.cs`
-3. **Is Prime** Test if a given number is a prime - `IsPrime.cs`
+1. `Fibonacci.js`
+
+   Print the n-th number in the fibonacci series
+
+2. `Fizzbuzz.js`
+
+   Fizzbuzz: print the numbers from 1 to N.<br>
+   But for multiples of 3 print 'fizz' instead of the number;<br>
+   for multiples of 5, print 'buzz';<br>
+   for numbers which are multiples of both 3 and 5, print 'fizzbuzz'<br>
+
+3. `IsPrime.js`
+
+   Test if a given number is a prime(质数)
 
 `/String`
 

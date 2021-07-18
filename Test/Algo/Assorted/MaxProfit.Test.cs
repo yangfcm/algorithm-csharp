@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algo.Dynamic;
+using Algo.Assorted;
 
-namespace Test.Algo.Dynamic
+namespace Test.Algo.Assorted
 {
   [TestClass]
   public class MaxProfitTest

@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Algo.Dynamic;
+using Algo.Assorted;
 using System;
 using System.IO;
 
-namespace Test.Algo.Dynamic
+namespace Test.Algo.Assorted
 {
   [TestClass]
   public class StepsTest

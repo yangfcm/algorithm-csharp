@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Ds.Graph;
 
-namespace Test.Ds.Graph_
+namespace Test.Ds.GraphTest
 {
   [TestClass]
   public class GraphTest

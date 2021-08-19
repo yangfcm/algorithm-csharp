@@ -167,53 +167,115 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 `/Ds/Hash`
 
-1. **Hash Table** Implement a hash table - `HashTable.cs`
+1. `HashTable.cs` Implement a hash table
 
 `/Ds/LinkedList`
 
-1. Implement a linked list - `MyLinkedList.cs`
-2. Get the middle node of a linked list - `MidPoint.cs`
-3. Check if a linked list is circular - `Circular.cs`
-4. Return the nth(starting at 0) node from the tail in a linked list - `SearchFromLast.cs`
-5. Remove duplicates from an unsorted linked list - `RemoveDuplicate.cs`
-6. Partition a linked list - `Partition.cs`
-7. Sum two linked list - `SumLists.cs`
+1. `MyLinkedList.cs`
+
+   Implement a linked list
+
+2. `MidPoint.cs`
+
+   Get the middle node of a linked list
+
+3. `Circular.cs`
+
+   Check if a linked list is circular
+
+4. `SearchFromLast.cs`
+
+   Return the nth(starting at 0) node from the tail in a linked list
+
+5. `RemoveDuplicate.cs`
+
+   Remove duplicates from an unsorted linked list
+
+6. `Partition.cs`
+
+   Partition a linked list
+
+7. `SumLists.cs`
+
+   Sum two linked list
 
 `/Ds/StackQueue`
 
-1. Implement Queue class's Enqueue(), Dequeue() and Peek() method ONLY using two Stacks - `QueueFromStack.cs`
-2. "Weave" two queues - `Weave.cs`
-3. Get the minimum number in a stack - `GetMin.cs`
-4. Sort a stack - `SortStack.cs`
-5. Implement an animal queue - `AnimalQueue.cs`
-6. Implement a stack of plates - `SetOfStacks.cs`
+1. `AnimalQueue.cs`
+
+   Implement an animal queue
+
+2. `GetMin.cs`
+
+   Get the minimum number in a stack
+
+3. `QueueFromStack.cs`
+
+   Implement Queue class's Enqueue(), Dequeue() and Peek() method ONLY using two Stacks
+
+4. `SetOfStacks.cs`
+
+   Implement a stack of plates
+
+5. `SortStack.cs`
+
+   Sort a stack
+
+6. `Weave.cs`
+
+   "Weave" two queues
 
 `/Ds/Tree`
 
-1. Implement a tree and using BFS and DFS to traverse a tree - `Tree.cs`
-2. Get the width of each level of a tree - `Tree.cs`
-3. Implement a binary search tree - `BinarySarchTree.cs`
-4. Validate the binary search tree - `BinarySarchTree.cs`
-5. Create a binary search tree with minimal height based on a ascend-sorted array - `minimalTree.cs`
-6. Create an array of all the nodes at each depth. - `ListOfDepths.cs`
+1. `Tree.cs`
+
+   Implement a tree and using BFS and DFS to traverse a tree incl. get the width of each level of a tree
+
+2. `BinarySarchTree.cs`
+
+   Implement a binary search tree incl. validate a binary search tree
+
+3. `minimalTree.cs`
+
+   Create a binary search tree with minimal height based on a ascend-sorted array
+
+4. `ListOfDepths.cs`
+
+   Create an array of all the nodes at each depth.
 
 `/Ds/Graph`
 
-1. Implement a graph class and its relevant methods, including DFS and BFS - `Graph.cs`
+1. `Graph.cs`
+
+   Implement a graph class and its relevant methods, including DFS and BFS
 
 ## Searching
 
 `/Searching`
 
-1. Implement linear search - `LinearSearch.cs`
-2. Implement binary search - `BinarySearch.cs`
-3. Implmenet jump search - `JumpSearch.cs`
-4. Implement interpolation search - `InterpolationSearch.cs`
-5. Implement exponential search - `ExponentialSearch.cs`
+1. `LinearSearch.cs`
+
+   Implement linear search
+
+2. `BinarySearch.cs`
+
+   Implement binary search
+
+3. `JumpSearch.cs`
+
+   Implmenet jump search
+
+4. `InterpolationSearch.cs`
+
+   Implement interpolation search
+
+5. `ExponentialSearch.cs`
+
+   Implement exponential search
 
 ## Development Environment
 
-- .Net core SDK 3.0 - Need to [download](https://dotnet.microsoft.com/download) and install it before running
+- .Net core SDK 5.0 - Need to [download](https://dotnet.microsoft.com/download) and install it before running
 - C# 8.0
 
 ## How to run

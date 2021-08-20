@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 /**
@@ -24,6 +23,8 @@ namespace Algo.Dynamic
     // Use memoization
     static public long Solution2(int m, int n)
     {
+      if (m == 1 && n == 1) return 1;
+      if (m == 0 || n == 0) return 0;
       return Solution2(m, n, new Dictionary<string, long>());
     }
 

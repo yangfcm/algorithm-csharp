@@ -1,9 +1,7 @@
-
-
 using System;
 using System.Collections.Generic;
 /**
-* Write a function canConstruct(target, strs) that accepts a target string and an array of strings.
+* Function canConstruct(target, strs) accepts a target string and an array of strings.
 * The function should return a boolean indicating whether or not the target can be
 * constructed by concatenating elements of the strs array.
 * You may use elements in strs as many times as needed.
@@ -15,7 +13,7 @@ namespace Algo.Dynamic
     public class CanConstruct
     {
       static public bool Solution1(string target, string[] strs) {
-        if(target == "") return true;
+        if (target == "") return true;
         foreach(string str in strs) 
         {
           if(target.IndexOf(str) == 0) {

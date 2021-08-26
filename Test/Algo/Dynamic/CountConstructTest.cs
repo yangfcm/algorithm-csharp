@@ -27,28 +27,28 @@ namespace Test.Algo.Dynamic
     [TestMethod] 
     public void TestSolution1() 
     {
-      Assert.AreEqual(1, countConstruct.Solution1(target1, strs1));
-      Assert.AreEqual(2, countConstruct.Solution1(target2, strs2));
-      Assert.AreEqual(4, countConstruct.Solution1(target3, strs3));
-      Assert.AreEqual(0, countConstruct.Solution1(target4, strs4));
+      Assert.AreEqual(1, CountConstruct.Solution1(target1, strs1));
+      Assert.AreEqual(2, CountConstruct.Solution1(target2, strs2));
+      Assert.AreEqual(4, CountConstruct.Solution1(target3, strs3));
+      Assert.AreEqual(0, CountConstruct.Solution1(target4, strs4));
     }
 
     [TestMethod]
     public void TestSolution2() {
-      Assert.AreEqual(1, countConstruct.Solution2(target1, strs1));
-      Assert.AreEqual(2, countConstruct.Solution2(target2, strs2));
-      Assert.AreEqual(4, countConstruct.Solution2(target3, strs3));
-      Assert.AreEqual(0, countConstruct.Solution2(target4, strs4));
-      Assert.AreEqual(0, countConstruct.Solution2(target5, strs5));
+      Assert.AreEqual(1, CountConstruct.Solution2(target1, strs1));
+      Assert.AreEqual(2, CountConstruct.Solution2(target2, strs2));
+      Assert.AreEqual(4, CountConstruct.Solution2(target3, strs3));
+      Assert.AreEqual(0, CountConstruct.Solution2(target4, strs4));
+      Assert.AreEqual(0, CountConstruct.Solution2(target5, strs5));
     }
 
     [TestMethod]
     public void TestSolution3() {
-      Assert.AreEqual(1, countConstruct.Solution3(target1, strs1));
-      Assert.AreEqual(2, countConstruct.Solution3(target2, strs2));
-      Assert.AreEqual(4, countConstruct.Solution3(target3, strs3));
-      Assert.AreEqual(0, countConstruct.Solution3(target4, strs4));
-      Assert.AreEqual(0, countConstruct.Solution3(target5, strs5));
+      Assert.AreEqual(1, CountConstruct.Solution3(target1, strs1));
+      Assert.AreEqual(2, CountConstruct.Solution3(target2, strs2));
+      Assert.AreEqual(4, CountConstruct.Solution3(target3, strs3));
+      Assert.AreEqual(0, CountConstruct.Solution3(target4, strs4));
+      Assert.AreEqual(0, CountConstruct.Solution3(target5, strs5));
     }
   }
 }

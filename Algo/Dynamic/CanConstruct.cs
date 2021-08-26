@@ -9,7 +9,7 @@ using System.Collections.Generic;
 * But there is no way to construct "abcef", so function returns false.
 */
 namespace Algo.Dynamic
- {
+{
     public class CanConstruct
     {
       static public bool Solution1(string target, string[] strs) {

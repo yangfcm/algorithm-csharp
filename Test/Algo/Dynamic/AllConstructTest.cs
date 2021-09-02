@@ -72,10 +72,10 @@ namespace Test.Algo.Dynamic
             );
             var actual2 = AllConstruct.Solution3(target2, strs2);
             
-            Console.WriteLine("+++++++Debug+++++++");
-            actual2[2].ForEach(Console.WriteLine);
-            Console.WriteLine("+++++++Debug+++++++");
-            actual2[3].ForEach(Console.WriteLine);
+            // Console.WriteLine("+++++++Debug+++++++");
+            // actual2[2].ForEach(Console.WriteLine);
+            // Console.WriteLine("+++++++Debug+++++++");
+            // actual2[3].ForEach(Console.WriteLine);
             Assert.IsTrue(Assert2DListsEqual(expected1, actual1));
 
             Assert.IsTrue(Assert2DListsEqual(expected2, actual2));

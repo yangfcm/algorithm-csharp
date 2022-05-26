@@ -6,7 +6,7 @@ namespace Algo.Sorting
   /**
 	Implement bubble sorting, selection sorting and merge sorting
 	 */
-  public class Sorting
+  public class Sort
   {
     /**
 		Bubble sorting:

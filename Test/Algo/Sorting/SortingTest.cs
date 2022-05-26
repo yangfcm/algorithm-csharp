@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algo.Sorting;
 
-namespace Test.Algo.Sorting_
+namespace Test.Algo.Sorting
 {
   [TestClass]
   public class SortingTest
@@ -13,7 +13,7 @@ namespace Test.Algo.Sorting_
     )]
     public void TestBubble(int[] arr, int[] expectedSortedArr)
     {
-      var sortedArr = Sorting.Bubble(arr);
+      var sortedArr = Sort.Bubble(arr);
       CollectionAssert.AreEqual(sortedArr, expectedSortedArr);
     }
 
@@ -24,7 +24,7 @@ namespace Test.Algo.Sorting_
     )]
     public void TestSelection(int[] arr, int[] expectedSortedArr)
     {
-      var sortedArr = Sorting.Selection(arr);
+      var sortedArr = Sort.Selection(arr);
       CollectionAssert.AreEqual(sortedArr, expectedSortedArr);
     }
 
@@ -35,7 +35,7 @@ namespace Test.Algo.Sorting_
     )]
     public void TestMerge(int[] arr, int[] expectedSortedArr)
     {
-      var sortedArr = Sorting.Merge(arr);
+      var sortedArr = Sort.Merge(arr);
       CollectionAssert.AreEqual(sortedArr, expectedSortedArr);
     }
   }

@@ -191,7 +191,13 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 `/Sorting`
 
-1. **Sorting** Implement the three most common sorting methods - `Sorting.cs`
+1. `Sorting.cs`
+
+   Implement the three most common sorting methods
+
+2. `CountingSort.cs`
+
+   Implement counting sort
 
 ## Data structure
 

@@ -2,7 +2,7 @@
 
 ## Intro
 
-Interview: Algorithms problems and solutions written in C#, including test cases.
+Algorithms, Data Structure problems and solutions written in C#, including test cases.
 
 ## Algorithms problems content
 
@@ -311,7 +311,7 @@ Interview: Algorithms problems and solutions written in C#, including test cases
 
 ## Development Environment
 
-- .Net core SDK 5.0 - Need to [download](https://dotnet.microsoft.com/download) and install it before running
+- .Net core SDK 6.0 - Need to [download](https://dotnet.microsoft.com/download) and install it before running
 - C# 8.0
 
 ## How to run

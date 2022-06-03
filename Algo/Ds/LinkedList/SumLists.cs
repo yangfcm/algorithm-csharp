@@ -14,66 +14,6 @@ namespace Algo.Ds.LinkedList
 {
   public class SumLists
   {
-    static public MyLinkedList<int> SumRev(MyLinkedList<int> list1, MyLinkedList<int> list2)
-    {
-      int num1 = ConvertListToNumber(list1, -1);
-      int num2 = ConvertListToNumber(list2, -1);
-      int sum = num1 + num2;
-      return ConvertNumberToList(sum, -1);
-    }
-
-    static public MyLinkedList<int> SumFwd(MyLinkedList<int> list1, MyLinkedList<int> list2)
-    {
-      int num1 = ConvertListToNumber(list1, 1);
-      int num2 = ConvertListToNumber(list2, 1);
-      int sum = num1 + num2;
-      return ConvertNumberToList(sum, 1);
-    }
-
-    /** Help function 1:
-    * Convert a linked list to a number, if direction is a number bigger than or equal 0, then convert it forwardly.
-    * If direction is a number less than 0, convert it reversely.
-    * e.g. list (7 -> 1 -> 6) direction 1 => 716, list (7 -> 1 -> 6) direction -1 => 617
-    * @param {LinkedList} list
-    * @param {number} direction
-    */
-    private static int ConvertListToNumber(MyLinkedList<int> list, int direction = 1)
-    {
-      string numberStr = "";
-      list.ForEach((node, counter) =>
-      {
-        numberStr = direction >= 0 ?
-          numberStr + node.Data.ToString() :
-          node.Data.ToString() + numberStr;
-      });
-      return Convert.ToInt32(numberStr);
-    }
-
-    /** Help function 2:
-    * Convert a number to a linked list, if direction is a number bigger than or equal 0, then convert it forwardly.
-    * If direction is a number less than 0, convert it reversely.
-    * e.g. number 912 direction 1 => 9 -> 1 -> 2, direction -1 => 2 -> 1 -> 9
-    * @param {number} number
-    * @param {number} direction
-    */
-    private static MyLinkedList<int> ConvertNumberToList(int number, int direction = 1)
-    {
-      string numberStr = number.ToString();
-      MyLinkedList<int> list = new MyLinkedList<int>();
-      foreach (char numChar in numberStr)
-      {
-        if (direction >= 0)
-        {
-          list.AddLast(int.Parse(numChar.ToString()));
-        }
-        else
-        {
-          list.AddFirst(int.Parse(numChar.ToString()));
-        }
-      }
-      return list;
-    }
-
     static public MyLinkedList<int> Run(MyLinkedList<int> list1, MyLinkedList<int> list2)
     {
       var sumList = new MyLinkedList<int>();

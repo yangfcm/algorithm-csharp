@@ -2,22 +2,19 @@ using System;
 
 namespace Algo.Assorted
 {
-  /**
-Accept a positive number n
-The function should console write a pyramid shape with n levels using # character.
-Make sure the step has spaces on both left and right side.
-e.g.!--  2 =>
-' # '
-'###'
-3 =>
-'  #  '
-' ### '
-'#####'
-4 =>
-'   #   '
-'  ###  '
-' ##### '
-'#######'
+/**
+ * Write a function that accepts a position number and print a pyramid shape with N levels,
+ * using # character and space(s) on both left and right side.
+ * Example
+ *   pyramid(1)
+ *       '#'
+ *   pyramid(2)
+ *       ' # '
+ *       '###'
+ *   pyramid(3)
+ *       '  #  '
+ *       ' ### '
+ *       '#####'
  */
   public class Pyramid
   {

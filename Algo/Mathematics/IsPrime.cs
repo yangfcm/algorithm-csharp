@@ -3,8 +3,8 @@ using System;
 namespace Algo.Mathematics
 {
   /**
-	Return true or false, indicating whether a given number is a prime
-	*/
+	 * Return true or false, indicating whether a given number is a prime number.
+	 */
   public class IsPrime
   {
     static public bool Run(int num)

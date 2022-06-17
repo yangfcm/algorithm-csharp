@@ -1,12 +1,15 @@
 using System.Collections.Generic;
 
 /**
-* Given an array of numbers and a target number, return an array containing 
-* the shortest combination of numbers that add up to exactly the target sum.
-* If there is no combination that adds up to the target sum, return null.
-* You may use an element of the array as many times as needed.
-* Assum all input numbers are non-negative.
-* It is a follow-up problem to CanSum and HowSum.
+ * Given an array of numbers and a target number, return an array containing 
+ * the shortest combination of numbers that add up to exactly the target sum.
+ * If there is no combination that adds up to the target sum, return null.
+ * You may use an element of the array as many times as needed.
+ * Assum all input numbers are non-negative.
+ * It is a follow-up problem to CanSum and HowSum.
+ * Example
+ * target = 7, numbers = [2, 3] ->[2, 3, 2]
+ * target = 7, numbers = [5, 3, 4, 7] -> [7] There are two possible combinations: [3, 4] and [7] but [7] has only one element, which is the answer.
 */
 namespace Algo.Dynamic 
 {

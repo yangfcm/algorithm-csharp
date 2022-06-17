@@ -7,13 +7,13 @@ namespace Algo.Mathematics
 	But for multiples of 3 print 'fizz' instead of the number,
 	for multiples of 5, print 'buzz',
 	for numbers which are multiples of both 3 and 5, print 'fizzbuzz'
-	For example: 
-	fizzbuzz(5);
-	1
-	2
-	fizz
-	4
-	buzz
+	Example: 
+    fizzbuzz(5);
+    1
+    2
+    fizz
+    4
+    buzz
 	 */
   public class FizzBuzz
   {

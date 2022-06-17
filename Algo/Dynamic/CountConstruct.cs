@@ -1,12 +1,14 @@
 
 using System.Collections.Generic;
 /**
-* Function countConstruct(target, strs) accepts a target string and an array of strings.
-* The function should return the number of ways that the target can be
-* constructed by concatenating elements of the strs array.
-* You may use elements in strs as many times as needed.
-* e.g. countConstruct('purple', ['purp', 'p', 'ur', 'le', 'purpl' ]) -> 2 i.e. 'purp' + 'le', 'p'+'ur'+'p'+'le'
-*/
+ * Function countConstruct(target, strs) accepts a target string and an array of strings.
+ * The function should return the number of ways that the target can be
+ * constructed by concatenating elements of the strs array.
+ * You may use elements in strs as many times as needed.
+ * Example:
+ *   target = 'purple', strs = ['purp', 'p', 'ur', 'le', 'purpl' ]) -> 2
+ *   There are two ways of constructing purple: 'purp' + 'le', 'p'+'ur'+'p'+'le', so 2 is our answer.
+ */
 namespace Algo.Dynamic
 {
   public class CountConstruct

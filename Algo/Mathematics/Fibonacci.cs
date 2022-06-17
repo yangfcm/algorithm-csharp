@@ -1,10 +1,8 @@
 using System.Collections.Generic;
 
 namespace Algo.Mathematics
-/**
-Fibonacci
-Print out the n-th number in the fibonacci series
-e.g. fibonacci(4) -> 3
+/** 
+ * Return the n-th number in the fibonacci series 
  */
 {
   public class Fibonacci

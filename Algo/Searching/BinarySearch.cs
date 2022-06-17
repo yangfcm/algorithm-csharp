@@ -1,7 +1,3 @@
-/**
- * Implement binary search
- * Given a sorted array, search a given element val in the array
- */
 namespace Algo.Searching
 {
   public class BinarySearch

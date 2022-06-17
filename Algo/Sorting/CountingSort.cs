@@ -2,9 +2,6 @@ using System.Linq;
 
 namespace Algo.Sorting 
 {
-  /**
-   * Implement counting sort.
-   */
   public class CountingSort
   {
     static public int[] Sort(int[] arr) 

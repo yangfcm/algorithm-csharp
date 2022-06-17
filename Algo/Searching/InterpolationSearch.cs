@@ -1,7 +1,3 @@
-/**
- * Implement interpolation search
- */
-
 using System;
 
 namespace Algo.Searching

@@ -4,17 +4,10 @@ using System.Collections.Generic;
 namespace Algo.Sorting
 {
   /**
-	Implement bubble sorting, selection sorting and merge sorting
+	Implement bubble sort, selection sort and merge sort.
 	 */
   public class Sort
   {
-    /**
-		Bubble sorting:
-		* From i=0 to i<array length
-		*   From j=0 to (array length - i)
-		*     If the element at j is greater than its next element(j+1)
-		*       Swap elements j and j+1
-		 */
     static public int[] Bubble(int[] arr)
     {
       for (int i = 0; i < arr.Length; i++)
@@ -32,15 +25,6 @@ namespace Algo.Sorting
       return arr;
     }
 
-    /**
-		* From i=0 to i<array length
-		*   Assume the element at 'i' is the least in the array, assign i to 'indexOfMin'
-		*   For j from i+1 to the end of array
-		*     See if there is an element with smaller value
-		*       If there is, record its index
-		*   If the index of the current element and the index of the 'smallest' element is not the same, swap them.
-		* 
-		*/
     static public int[] Selection(int[] arr)
     {
       for (int i = 0; i < arr.Length; i++)
@@ -63,19 +47,6 @@ namespace Algo.Sorting
       return arr;
     }
 
-    /**
-		Merge sorting:
-		The purpose of merge function is to take two sorted arrays(left, right) into one sorted array
-		* 
-		* How...
-		* Create an empty array to hold the sorted array called 'merged'
-		* While there are still elements in both arrays
-		*   If the first element of the left half is less than first in the right half
-		*     'Shift' the element from the left into the 'merged' array
-		*   else 
-		*     'Shift' the element from the right into the 'merged' array
-		* Take everything from the array that still has element(s) in it and put it in 'merged'
-		 */
     static public int[] Merge(int[] arr)
     {
       if (arr.Length == 1)

@@ -1,6 +1,3 @@
-/**
- * Implement exponential search
- */
 using System;
 using System.Linq;
 

@@ -2,7 +2,7 @@ namespace Algo.Arr
 {
   /**
 	* Given a sorted array nums, remove the duplicates *in-place* such that each element appear only once and return the new length.
- 	* e.g. Given nums = [0,0,1,1,1,2,2,3,3,4], return length = 5 
+ 	* Example: Given nums = [0,0,1,1,1,2,2,3,3,4], return length = 5 
 	*/
   public class RemoveDuplicates
   {

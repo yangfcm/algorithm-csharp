@@ -3,20 +3,15 @@ using System;
 namespace Algo.Arr
 {
   /**
-	Take an unsorted array of unique numbers from 1 to n.
-	Return the missing number in the sequence or null if there is no missing number
-	There is either no missing number or exactly one missing number.
-	e.g.!-- [1, 4, 3, 5] => 2
-		[2, 3, 4, 1] => null
-		[] => null
+	 * Take an unsorted array of unique numbers from 1 to n.
+	 * Return the missing number in the sequence or null if there is no missing number
+	 * There is either no missing number or exactly one missing number.
+	 * Example: [1, 4, 3, 5] -> 2
+	 *	[2, 3, 4, 1] -> null
+	 *	[] -> null
 	 */
   public class Missing
   {
-    /**
-		Solution: find the max number of the array
-		If max number equals array's length, it means no missing number so return null
-		Otherwise, increment i from 1 to max; if i odesn't exist in the array, it is exactly the missint number.
-		 */
     public static int? RunSolution1(int[] array)
     {
       if (array.Length == 0)

@@ -1,13 +1,13 @@
-/**
- * Given a string, determine if it has all unique characters.
- * Solution: Create a character map(object) to record the count each character of the string.
- * Then iterate the object to see if there is a character with the count > 1
- * Its solution is similar to maxchar.js
- */
+
 using System.Collections.Generic;
 
 namespace Algo.String
 {
+  /**
+    * Given a string, determine if it has all unique characters.
+    * Solution: Create a character map(object) to record the count each character of the string.
+    * Then iterate the object to see if there is a character with the count > 1
+    */
   public class IsUnique
   {
     public static bool Run(string str)

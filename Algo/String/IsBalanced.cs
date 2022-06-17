@@ -1,11 +1,11 @@
 namespace Algo.String
 {
   /**
-	Take a string and return true or false to indicate whether its curly braces are balanced
-	e.g. '}{' => false,
-	'{abc}{def}' => true
-	'{abc {def}}' => true
-	'{abc {{def}}' => false
+    Take a string and return true or false to indicate whether its curly braces are balanced
+    Example: '}{' => false,
+      '{abc}{def}' => true
+      '{abc {def}}' => true
+      '{abc {{def}}' => false
 	*/
   public class IsBalanced
   {

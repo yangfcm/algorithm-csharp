@@ -1,8 +1,6 @@
 /**
- * Give a linked list and integer n, return the element n spaces
- * from the last node in the list. 获取Linked list中倒数第n个节点
+ * Give a linked list and integer n, return the element n spaces from the last node in the list.
  */
-
 namespace Algo.Ds.LinkedList
 {
   public class SearchFromLast<T>

@@ -4,7 +4,6 @@ using System.Collections.Generic;
  * Implement a Graph class.
  * Use a two-dimentaional array to represent a graph
  */
-
 namespace Algo.Ds.Graph
 {
   public class Graph
@@ -16,9 +15,9 @@ namespace Algo.Ds.Graph
     List<int> GraphArr; // The array to store the traverse result of a graph
     int NumberOfEdges;  // How many edges in the graph
 
-    /*
-    * Constructor - Initialize Graph class
-    */
+    /**
+     * Constructor - Initialize Graph class
+     */
     public Graph(int[] vertexList, bool undirected = true)
     {
       NumberOfEdges = 0;
@@ -30,12 +29,9 @@ namespace Algo.Ds.Graph
       GraphArr = new List<int>();
     }
 
-    /*
-    * Add an edge between two vertexes
-    * @param {int} startIndex the index of the starting vertex in vertex list
-    * @param {int} endIndex the index of the end vertex in vertex list
-    * @param {int} weight the weight of the edge, set 1 by default
-    */
+    /**
+     * Add an edge between two vertexes
+     */
     public void InsertEdge(int startIndex, int endIndex, int weight = 1)
     {
       if (Matrix[startIndex, endIndex] == 0)
@@ -50,10 +46,8 @@ namespace Algo.Ds.Graph
     }
 
     /**
-    * Remove an edge between two vertexes
-    * @param {int} startIndex the index of the starting vertex in vertex list
-    * @param {int} endIndex the index of the end vertex in vertex list
-    */
+     * Remove an edge between two vertexes
+     */
     public void RemoveEdge(int startIndex, int endIndex)
     {
       if (Matrix[startIndex, endIndex] != 0)
@@ -78,19 +72,16 @@ namespace Algo.Ds.Graph
     }
 
     /**
-    * Get the value of the vertex based on its index
-    * @param {int} index
-    */
+      * Get the value of the vertex based on its index
+      */
     public int GetValueByIndex(int index)
     {
       return VertexList[index];
     }
 
     /**
-    * Get the weight of the edge from one vertex to another
-    * @param {int} startIndex
-    * @param {int} endIndex
-    */
+      * Get the weight of the edge from one vertex to another
+      */
     public int GetWeight(int startIndex, int endIndex)
     {
       return Matrix[startIndex, endIndex];
@@ -105,10 +96,8 @@ namespace Algo.Ds.Graph
     }
 
     /**
-    * Given the index of a vertex, get its adjacent vertex.
-    * @param {int} index
-    * @returns {int} The index of the adjacent vertex. If not found, return -1;
-    */
+      * Given the index of a vertex, get its adjacent vertex. 
+      */
     public int GetFirstAdjacent(int index)
     {
       for (int k = 0; k < VertexList.Length; k++)
@@ -122,11 +111,8 @@ namespace Algo.Ds.Graph
     }
 
     /**
-    * Given the index of a vertex(v1), get its adjacent vertex starting from v2
-    * @param {int} v1
-    * @param {int} v2
-    * @returns {int} The index of the adjacent vertex. If not found, return -1
-    */
+      * Given the index of a vertex(v1), get its adjacent vertex starting from v2
+      */
     public int GetNextAdjacent(int v1, int v2)
     {
       for (int k = v2 + 1; k < VertexList.Length; k++)
@@ -140,8 +126,8 @@ namespace Algo.Ds.Graph
     }
 
     /**
-    * Search depth-first for a vertex at index
-    */
+     * Search depth-first for a vertex at index
+     */
     void SearchDFSVertex(int index)
     {
       GraphArr.Add(GetValueByIndex(index));
@@ -158,7 +144,7 @@ namespace Algo.Ds.Graph
       }
     }
 
-    /*
+    /**
      * Do DFS searching for the whole graph
      */
     public List<int> SearchDFS()
@@ -176,8 +162,8 @@ namespace Algo.Ds.Graph
     }
 
     /**
-    * Search broadth-first for a vertex at index
-    */
+     * Search broadth-first for a vertex at index
+     */
     void SearchBFSVertex(int index)
     {
       var queue = new Queue<int>(); // Use a queue to record the sequence of visiting.
@@ -203,7 +189,7 @@ namespace Algo.Ds.Graph
       }
     }
 
-    /*
+    /**
      * Do BFS searching for the whole graph
      */
     public List<int> SearchBFS()
@@ -219,8 +205,5 @@ namespace Algo.Ds.Graph
       }
       return GraphArr;
     }
-
-
-
   }
 }

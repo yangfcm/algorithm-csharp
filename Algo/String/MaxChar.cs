@@ -3,8 +3,8 @@ using System.Collections.Generic;
 namespace Algo.String
 {
   /**
-	Give a string, return the character that is most commonly used in the string
-	e.g.!-- 'abccccdd' => 'c'
+	 * Give a string, return the character that is most commonly used in the string
+	 * Example: 'abccccdd' -> 'c'
 	 */
   public class MaxChar
   {

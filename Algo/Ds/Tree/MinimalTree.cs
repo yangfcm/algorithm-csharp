@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 /**
  * Given a sorted, increasing order array/list with unique integer elements,
  * write a function to create a binary search tree with minimal height.
@@ -8,15 +10,10 @@
  *   2     6
  *  / \   / \
  * 1  3  5  7
- */
-
-/**
  * Solution: The middle of each subsection of the array becomes the root of the node.
  * The left half of the array will become the left subtree
  * and the right half of the array will become the right subtree.
  */
-using System.Collections.Generic;
-
 namespace Algo.Ds.Tree.Bst
 {
   public class CreateMinimalBst

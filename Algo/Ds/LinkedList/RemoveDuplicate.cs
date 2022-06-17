@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 
-/*
- Given a linked list, remove the duplicate node(s) from it.
-*/
+/**
+ * Given a linked list, remove the duplicate node(s) from it.
+ */
 namespace Algo.Ds.LinkedList
 {
   public class RemoveDuplicate

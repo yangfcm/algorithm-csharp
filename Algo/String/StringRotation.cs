@@ -1,13 +1,13 @@
-/**
- * In C#, you have method Contains to check if one string is a substring of another.
- * Given two strings, check if s2 is a rotation of s1 using only one call to Contains.
- * If a string is a rotation of another, it's a rotation at a particular point.
- * e.g. a rotation of "waterbottle" at character 3 means cutting this string at character 3 and 
- * putting the right half('erbottle') before the left half('wat')
- * so the result is "erbottlewat"
- */
 namespace Algo.String
 {
+  /**
+    * In C#, you have method Contains to check if one string is a substring of another.
+    * Given two strings, check if s2 is a rotation of s1 using only one call to Contains.
+    * If a string is a rotation of another, it's a rotation at a particular point.
+    * Example: a rotation of "waterbottle" at character 3 means cutting this string at character 3 and 
+    * putting the right half('erbottle') before the left half('wat')
+    * so the result is "erbottlewat"
+    */
   public class CheckStringRotation
   {
     public static bool Run(string str1, string str2)

@@ -4,8 +4,7 @@ namespace Algo.String
 {
 
   /**
-	 * Given a string, remove the vowels from the string
-	 * and return the string without vowels
+	 * Given a string, remove the vowels from the string and return the string without vowels
 	 */
   public class RemoveVowels
   {

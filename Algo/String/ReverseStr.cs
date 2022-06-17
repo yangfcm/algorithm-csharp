@@ -3,8 +3,8 @@ using System;
 namespace Algo.String
 {
   /**
-	Reverse a string
-	e.g.!-- "hello" => "olleh"
+	 * Reverse a string
+	 * Example: "hello" => "olleh"
 	 */
   public class ReverseStr
   {

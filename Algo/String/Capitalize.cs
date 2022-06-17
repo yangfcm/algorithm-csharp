@@ -1,10 +1,9 @@
 namespace Algo.String
 {
-  /*
-	Capitalize
-	Given a string, capitalize the first letter of each word
-	in the string then return the capitalized string.
-	e.g. capitalize('it is so good!') --> It Is So Good    
+  /* 
+    Given a string, capitalize the first letter of each word
+    in the string then return the capitalized string.
+    Example: capitalize('it is so good!') --> It Is So Good    
 	 */
   public class Capitalize
   {

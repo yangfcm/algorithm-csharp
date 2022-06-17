@@ -3,7 +3,7 @@ using System.Collections.Generic;
 /**
  * Implement a Queue data structure using two Stacks instead of using the built-in Queue provided by C#.
  * Queue should implement the methods of Enqueue(), Dequeue() and Peek
- * --- Examples
+ * Example:
  *     const q = new Queue();
  *     q.add(1);
  *     q.add(2);
@@ -11,7 +11,6 @@ using System.Collections.Generic;
  *     q.remove(); // returns 1
  *     q.remove(); // returns 2
  */
-
 namespace Algo.Ds.StackQueue
 {
   public class QueueFromStack<T>

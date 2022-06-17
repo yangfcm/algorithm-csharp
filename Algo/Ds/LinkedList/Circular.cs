@@ -2,17 +2,17 @@
  * Circular
  * Use MyLinkedList, return true if it is circular, false if it is not.
  * A Circular linked list is a linked list where every element's next property
- * points to the next element, ie.!-- no empty node.next 
+ * points to the next element, ie. no empty node.next 
  * Example:
- * const l = new List();
- * const a = new Node('a');
- * const b = new Node('b');
- * const c = new Node('c');
- * l.head = a;
- * a.next = b;
- * b.next = c;
- * c.next = b;
- * circular(l) // true
+ *  const l = new List();
+ *  const a = new Node('a');
+ *  const b = new Node('b');
+ *  const c = new Node('c');
+ *  l.head = a;
+ *  a.next = b;
+ *  b.next = c;
+ *  c.next = b;
+ *  circular(l) // true
  */
 namespace Algo.Ds.LinkedList
 {

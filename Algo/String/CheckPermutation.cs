@@ -1,16 +1,11 @@
-/**
- * Given two strings, check if one is a permutation of the other.
- */
 using System;
 using System.Collections.Generic;
 
-/**
- * Solution: Create character maps for both str1 and str2 and compare them.
- * If each character has the same value(count of characters), they are permutation,
- * otherwise, they are not.
- */
 namespace Algo.String
 {
+  /**
+  * Given two strings, check if one is a permutation of the other.
+  */
   public class CheckPermutation
   {
     static public bool Run(string str1, string str2)

@@ -3,8 +3,8 @@ using System;
 namespace Algo.String
 {
   /**
-	Return true if a given string is palindrome and false if not
-	e.g.!-- "racecar" => true,  "hello" => false
+   * Return true if a given string is palindrome and false if not
+   * Example: "racecar" => true,  "hello" => false
 	 */
   public class Palindrome
   {

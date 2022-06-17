@@ -3,8 +3,8 @@ using System;
 namespace Algo.String
 {
   /**
-	Reverse an integer
-	e.g.!-- 521 => 125, -521 => -125, 1200 => 21
+	 * Reverse an integer
+	 * Example: 521 => 125, -521 => -125, 1200 => 21
 	 */
   public class ReverseInt
   {

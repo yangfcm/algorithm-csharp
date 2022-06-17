@@ -5,8 +5,6 @@ using System;
  * Get the minimum element in a stack.
  * (All elements in stack are number) 
 */
-
-
 namespace Algo.Ds.StackQueue
 {
   /**

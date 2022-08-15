@@ -81,7 +81,6 @@ namespace Algo.Sorting
       mergedList.AddRange(leftList);
       mergedList.AddRange(rightList);
       return mergedList.ToArray();
-
     }
 
   }

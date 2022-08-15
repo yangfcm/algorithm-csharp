@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace Algo.Sorting
 {
     /// <summary>
@@ -26,6 +28,48 @@ namespace Algo.Sorting
                     if(arr[j] > current) count++;
                 }
             }
+            return count;
+        }
+
+        static public int[] Merge(int[] arr)
+        {
+            if (arr.Length == 1)
+            {
+                return arr;
+            }
+            int centerIndex = (int)(Math.Floor(arr.Length / 2.0));
+            int[] leftArr = new List<int>(arr).GetRange(0, centerIndex).ToArray();
+            int[] rightArr = new List<int>(arr).GetRange(centerIndex, arr.Length - centerIndex).ToArray();
+            return MergeArray(Merge(leftArr), Merge(rightArr));
+        }
+
+        static private int[] MergeArray(int[] left, int[] right)
+        {
+            var mergedList = new List<int>();
+            var leftList = new List<int>(left);
+            var rightList = new List<int>(right);
+            while (leftList.Count > 0 && rightList.Count > 0)
+            {
+                if (leftList[0] <= rightList[0])
+                {
+                    mergedList.Add(leftList[0]);
+                    leftList.RemoveAt(0);
+                }
+                else
+                {
+                    count += leftList.Count;
+                    mergedList.Add(rightList[0]);
+                    rightList.RemoveAt(0);
+                }
+            }
+            mergedList.AddRange(leftList);
+            mergedList.AddRange(rightList);
+            return mergedList.ToArray();
+        }
+
+        public static int Solution2(int[] arr) {
+            count = 0;
+            Merge(arr);
             return count;
         }
     }

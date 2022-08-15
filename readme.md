@@ -203,6 +203,10 @@ Algorithms, Data Structure problems and solutions written in C#, including test 
 
    Fradulent activity notice. An application in counting sort.
 
+4. `countInversions.cs`
+
+   Count how many inversions required to sort an unordered array.
+
 ## Data structure
 
 `/Ds/Hash`

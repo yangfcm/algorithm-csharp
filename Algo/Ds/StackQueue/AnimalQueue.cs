@@ -29,8 +29,8 @@ namespace Algo.Ds.StackQueue
   public class AnimalQueue
   {
     private int order;
-    private Queue<AnimalData> dogQueue;
-    private Queue<AnimalData> catQueue;
+    readonly private Queue<AnimalData> dogQueue;
+    readonly private Queue<AnimalData> catQueue;
     public AnimalQueue()
     {
       this.order = 0;

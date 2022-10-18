@@ -65,7 +65,7 @@ namespace Test.Ds.Hash
     [TestMethod]
     public void TestOverridNode()
     {
-      var newValue = hashTable.Put("Alex", 99);
+      hashTable.Put("Alex", 99);
       Assert.AreEqual(hashTable.Get("Alex"), 99);
     }
 

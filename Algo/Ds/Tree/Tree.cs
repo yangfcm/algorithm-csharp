@@ -55,9 +55,9 @@ namespace Algo.Ds.Tree
     }
 
     // Traverse by BFS
-    public void traverseBfs(Callback fn)
+    public void TraverseBfs(Callback fn)
     {
-      var treeList = new List<Node>();
+       List<Node> treeList = new ();
       treeList.Add(Root);
       // treeList is used to store elements of the tree by BFS order
       // Below: implement BFS traversal
@@ -73,9 +73,9 @@ namespace Algo.Ds.Tree
       }
     }
 
-    public void traverseDfs(Callback fn)
+    public void TraverseDfs(Callback fn)
     {
-      var treeList = new List<Node>();
+      List<Node> treeList = new ();
       treeList.Add(Root);
       while (treeList.Count > 0)
       {
@@ -104,13 +104,13 @@ namespace Algo.Ds.Tree
     * 4       5
     * Should return: [1, 3, 2]
     */
-    public List<int> levelWidth()
+    public List<int> LevelWidth()
     {
       string STOP_SIGN = "this is a stop sign to indicate the end of a level of tree";
-      List<int> widths = new List<int>(new int[] { 0 });
+      List<int> widths = new (new int[] { 0 });
       // widths list is to hold the width of each level
       // It starts from a single element of 0.
-      List<dynamic> treeList = new List<dynamic>();
+      List<dynamic> treeList = new ();
       treeList.Add(Root);
       treeList.Add(new Node(STOP_SIGN));  // STOP_SIGN is an arbitary letter used as a stop sign to indicate the end of a level
       while (treeList.Count > 1)
@@ -129,7 +129,7 @@ namespace Algo.Ds.Tree
           {
             treeList.Add(childNode);
           }
-          widths[widths.Count - 1]++; // Increment the width number
+          widths[^1]++; // Increment the width number
         }
       }
       return widths;

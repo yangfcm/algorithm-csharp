@@ -6,7 +6,7 @@ namespace Test.Algo.Searching
   [TestClass]
   public class BinarySearchTest
   {
-    int[] testArr = new int[] { -5, -1, 0, 2, 12, 23, 38, 72, 91, 1001 };
+    readonly private int[] testArr = new int[] { -5, -1, 0, 2, 12, 23, 38, 72, 91, 1001 };
 
     [TestMethod]
     public void TestSearchFound()

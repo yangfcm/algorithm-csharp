@@ -19,7 +19,7 @@ namespace Algo.Arr
         throw new Exception("Step must be a positive number");
       }
       int count = nums.Length;
-      List<int> numsList = new List<int>(nums);
+      List<int> numsList = new (nums);
       for (int i = 1; i <= k; i++)
       {
         // Equivalent to move the last element to the head

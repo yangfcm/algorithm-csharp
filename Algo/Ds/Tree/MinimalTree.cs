@@ -30,7 +30,7 @@ namespace Algo.Ds.Tree.Bst
         return null;
       }
       int mid = (start + end) / 2;
-      Node middleNode = new Node(arr[mid]);
+      Node middleNode = new (arr[mid]);
       middleNode.Left = CreateMinimalBstHelper(arr, start, mid - 1);
       middleNode.Right = CreateMinimalBstHelper(arr, mid + 1, end);
       return middleNode;

@@ -10,7 +10,7 @@ namespace Algo.Ds.StackQueue
   {
     static public void Run(Stack<int> stack)
     {
-      Stack<int> sortedStack = new Stack<int>();
+      Stack<int> sortedStack = new ();
       while (stack.Count > 0)
       {
         int currentEl = stack.Pop();

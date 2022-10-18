@@ -18,7 +18,7 @@ namespace Test
     {
       node = new Node("a");
       traverseResult = new List<dynamic>();
-      tree = new Tree();
+      tree = new ();
       tree.Root = new Node("a");
       tree.Root.Add("b");
       tree.Root.Add("c");
@@ -57,7 +57,7 @@ namespace Test
     [TestMethod]
     public void TestTraverseBfs()
     {
-      tree.traverseBfs((Node node) =>
+      tree.TraverseBfs((Node node) =>
       {
         traverseResult.Add(node.Data);
       });
@@ -68,7 +68,7 @@ namespace Test
     [TestMethod]
     public void TestTraverseDfs()
     {
-      tree.traverseDfs((Node node) =>
+      tree.TraverseDfs((Node node) =>
       {
         traverseResult.Add(node.Data);
       });
@@ -80,7 +80,7 @@ namespace Test
     public void TestLevelWidth()
     {
       var expectedWidth = new int[] { 1, 3, 3 };
-      Assert.IsTrue(expectedWidth.SequenceEqual(tree.levelWidth()));
+      Assert.IsTrue(expectedWidth.SequenceEqual(tree.LevelWidth()));
     }
   }
 }

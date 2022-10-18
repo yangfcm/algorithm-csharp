@@ -155,8 +155,8 @@ namespace Algo.Ds.Hash
         }
         for (int i = 0; i < bucket.Count; i++)
         {
-          (string key, dynamic value) node = bucket[i];
-          this.Put(node.key, node.value);
+          (string key, dynamic value) = bucket[i];
+          this.Put(key, value);
         }
       }
     }

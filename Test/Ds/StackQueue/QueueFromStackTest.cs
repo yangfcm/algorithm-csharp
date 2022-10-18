@@ -8,13 +8,13 @@ namespace Test.Ds.StackQueue
   {
 
 
-    QueueFromStack<int> queue;
+    readonly QueueFromStack<int> queue;
     public QueueFromStackTest()
     {
-      queue = this.SetEmptyQueue();
+      queue = SetEmptyQueue();
     }
 
-    private QueueFromStack<int> SetEmptyQueue()
+    private static QueueFromStack<int> SetEmptyQueue()
     {
       return new QueueFromStack<int>();
     }

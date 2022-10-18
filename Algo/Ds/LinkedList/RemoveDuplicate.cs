@@ -12,14 +12,14 @@ namespace Algo.Ds.LinkedList
       if (list.Head == null) return;
       var prev = list.Head;
       var node = prev.Next;
-      List<dynamic> existingData = new List<dynamic>() { prev.Data };
+      List<dynamic> existingData = new () { prev.Data };
       // Use a list to store the data that appears in linked list
       while (node != null)
       {
         if (existingData.Contains(node.Data))
         {
           // If the current node's data appeared in existingData.
-          prev.Next = node.Next == null ? null : node.Next;
+          prev.Next = node.Next ?? null;
         }
         else
         {

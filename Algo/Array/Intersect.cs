@@ -26,7 +26,7 @@ namespace Algo.Arr
         smaller = new List<int>(nums2);
         bigger = new List<int>(nums1);
       }
-      List<int> intersect = new List<int>();
+      List<int> intersect = new ();
       for (int i = 0; i < smaller.Count; i++)
       {
         int foundIndex = bigger.IndexOf(smaller[i]);

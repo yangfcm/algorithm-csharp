@@ -15,8 +15,8 @@ namespace Algo.Ds.StackQueue
 {
   public class QueueFromStack<T>
   {
-    private Stack<T> _stack1;
-    private Stack<T> _stack2;
+    readonly private Stack<T> _stack1;
+    readonly private Stack<T> _stack2;
     public QueueFromStack()
     {
       _stack1 = new Stack<T>();

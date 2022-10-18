@@ -18,7 +18,7 @@ namespace Algo.Mathematics
 
     static public long RunSolution2(int n)
     {
-      List<int> fiboArr = new List<int> { 0, 1 };
+      List<int> fiboArr = new() { 0, 1 };
       for (int i = 2; i <= n; i++)
       {
         int a = fiboArr[i - 1]; // The previous number

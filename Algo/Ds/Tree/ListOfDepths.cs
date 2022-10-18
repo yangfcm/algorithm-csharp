@@ -18,7 +18,7 @@ namespace Algo.Ds.Tree.Bst
   {
     public static List<List<Node>> Run(Node root)
     {
-      List<List<Node>> lists = new List<List<Node>>();
+      List<List<Node>> lists = new ();
       CreateLevelListHelper(root, lists, 0);
       return lists;
     }
@@ -44,8 +44,8 @@ namespace Algo.Ds.Tree.Bst
     /* Alternative solution to the problem */
     public static List<List<Node>> RunAlt(Node root)
     {
-      List<List<Node>> lists = new List<List<Node>>();
-      List<Node> current = new List<Node>();
+      List<List<Node>> lists = new ();
+      List<Node> current = new ();
       if (root != null)
       {
         current.Add(root);

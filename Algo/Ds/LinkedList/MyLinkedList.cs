@@ -70,7 +70,7 @@ namespace Algo.Ds.LinkedList
         return;
       }
 
-      var prevNode = Find(index - 1) == null ? FindLast() : Find(index - 1);
+      var prevNode = Find(index - 1) ?? FindLast();
       // If index is out of boundary, add the node at the tail of list
       newNode = new Node<T>(data, prevNode.Next);
       prevNode.Next = newNode;

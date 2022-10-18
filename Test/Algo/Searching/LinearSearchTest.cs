@@ -6,7 +6,7 @@ namespace Test.Algo.Searching
   [TestClass]
   public class LinearSearchTest
   {
-    int[] testArr = new int[] { 10, 20, 80, 30, 60, 50, 11, 100, 130, 170 };
+    readonly int[] testArr = new int[] { 10, 20, 80, 30, 60, 50, 11, 100, 130, 170 };
     [TestMethod]
     public void TestSearchFound()
     {

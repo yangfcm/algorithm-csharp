@@ -52,14 +52,22 @@
 
     Reverse a string
 
-14. `StringCompression.cs`
+14. `SpecialString.cs`
+
+    Find out how many special strings
+
+15. `StringCompression.cs`
 
     Compress a string
 
-15. `StringRotation.cs`
+16. `StringRotation.cs`
 
     Check if one string is the rotation of the other string, using isSubString function
 
-16. `Vowels.cs`
+17. `ValidString.cs`
+
+    Check if a string is valid as per a certain rule
+
+18. `Vowels.cs`
 
     Count the number of vowels used in a string

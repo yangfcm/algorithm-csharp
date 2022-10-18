@@ -57,7 +57,7 @@ namespace Test.Ds.Tree.Bst
       Assert.IsTrue(Node.IsBst(bstNode, null, null));
 
       // Assert false if the tree is not BST
-      var node = new Node(10);
+      Node node = new (10);
       node.Left = new Node(5);
       node.Right = new Node(20);
       node.Left.Right = new Node(12);

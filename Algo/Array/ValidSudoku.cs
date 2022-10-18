@@ -43,9 +43,9 @@ namespace Algo.Arr
       int n = 9;
       for (int i = 0; i < n; i++)
       {
-        List<string> row = new List<string>();
-        List<string> col = new List<string>();
-        List<string> box = new List<string>();
+        List<string> row = new ();
+        List<string> col = new ();
+        List<string> box = new ();
         for (int j = 0; j < n; j++)
         {
           if (board[i, j] != ".")

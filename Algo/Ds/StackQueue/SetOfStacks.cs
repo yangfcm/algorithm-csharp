@@ -13,8 +13,8 @@ namespace Algo.Ds.StackQueue
 {
   public class SetOfStacks<T>
   {
-    private int Capacity;
-    private List<Stack<T>> Stacks;
+    readonly private int Capacity;
+    readonly private List<Stack<T>> Stacks;
     public SetOfStacks(int capacity)
     {
       Capacity = capacity;
@@ -28,7 +28,7 @@ namespace Algo.Ds.StackQueue
         Stacks.Add(new Stack<T>());
       }
 
-      Stack<T> lastSubStack = Stacks[Stacks.Count - 1];
+      Stack<T> lastSubStack = Stacks[^1];
       if (lastSubStack.Count >= Capacity)
       {
         Stacks.Add(new Stack<T>(new[] { data }));
@@ -43,9 +43,9 @@ namespace Algo.Ds.StackQueue
     {
       if (Stacks.Count == 0)
       {
-        return default(T);
+        return default;
       }
-      Stack<T> lastSubStack = Stacks[Stacks.Count - 1];
+      Stack<T> lastSubStack = Stacks[^1];
       T popedEl = lastSubStack.Pop();
       if (lastSubStack.Count == 0)  // If the stack is empty, remove this stack.
       {

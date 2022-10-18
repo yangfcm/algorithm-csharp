@@ -14,7 +14,7 @@ namespace Test.Ds.Tree.Bst
     [TestInitialize]
     public void TestInitialize()
     {
-      root = new Node(0);
+      root = new (0);
       root.Left = new Node(1);
       root.Right = new Node(3);
       root.Left.Left = new Node(4);

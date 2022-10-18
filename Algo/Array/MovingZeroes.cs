@@ -11,7 +11,7 @@ namespace Algo.Arr
     public static int[] Run(int[] nums)
     {
       bool trailingZero = true;
-      List<int> numsList = new List<int>(nums);
+      List<int> numsList = new (nums);
       for (int i = numsList.Count - 1; i >= 0; i--)
       {
         if (numsList[i] != 0)

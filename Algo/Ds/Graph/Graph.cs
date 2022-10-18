@@ -8,9 +8,9 @@ namespace Algo.Ds.Graph
 {
   public class Graph
   {
-    bool Undirected;  // If the graph is directed or undirected
-    int[] VertexList; // The list of vertexes in the graph
-    int[,] Matrix; // A two-dementional array to represent a graph
+    readonly bool Undirected;  // If the graph is directed or undirected
+    readonly int[] VertexList; // The list of vertexes in the graph
+    readonly int[,] Matrix; // A two-dementional array to represent a graph
     bool[] IsVisited; // The array to record if a vertex at index i is visited or not
     List<int> GraphArr; // The array to store the traverse result of a graph
     int NumberOfEdges;  // How many edges in the graph

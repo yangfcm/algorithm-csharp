@@ -12,7 +12,7 @@ namespace Algo.String
     {
       char[] numberArr = Math.Abs(number).ToString().ToCharArray();
       Array.Reverse(numberArr);
-      string reversedStr = new string(numberArr);
+      string reversedStr = new (numberArr);
       return int.Parse(reversedStr) * Math.Sign(number);
     }
   }

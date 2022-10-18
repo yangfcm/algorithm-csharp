@@ -12,7 +12,7 @@ namespace Algo.Arr
   {
     static public int[] Run(int[] digits)
     {
-      List<int> digitsList = new List<int>(digits);
+      List<int> digitsList = new (digits);
       for (int i = digitsList.Count - 1; i >= 0; i--)
       {
         if (digitsList[i] < 9)

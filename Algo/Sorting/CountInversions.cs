@@ -16,10 +16,19 @@ namespace Algo.Sorting
     /// [1, 1, 2, 3, 2], index: 3, 4, elements: arr[3] = 3, arr[4] = 2 -> 1 swap -> [1, 1, 2, 2, 3]
     /// So the result is 1 + 2 + 1 = 4 swaps.
     /// </example>
+    /// <source>
+    /// https://www.hackerrank.com/challenges/ctci-merge-sort
+    /// </source>
     public class CountInversions
     {
         private static int count = 0;
-
+        /// <summary>
+        /// This is a straightforward solution. Iterate through the array(from index = 1) and for each particular element,
+        /// look at its previous elements and if there's any one bigger than it, it means one swap required, i.e. adding count by 1.
+        /// Time complexity: O(n^2)
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns>The number of inversions required to sort a given array</returns>
         public static int Solution1(int[] arr) {
             count = 0;
             for (int i = 1; i < arr.Length; i++) {
@@ -67,6 +76,11 @@ namespace Algo.Sorting
             return mergedList.ToArray();
         }
 
+        /// <summary>
+        /// Use the method of merge sort. Time complexity: n*log(n). Most code is from Sorting.Merge()
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns>The number of inversions required to sort a given array</returns>
         public static int Solution2(int[] arr) {
             count = 0;
             Merge(arr);

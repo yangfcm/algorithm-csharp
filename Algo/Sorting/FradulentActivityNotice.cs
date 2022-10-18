@@ -18,8 +18,25 @@ namespace Algo.Sorting
     /// Because 50 < 30 * 2, client will not get a notification on that day.
     /// So, there will be 1 notification sent.
     /// </example>
+    /// <source>
+    /// https://www.hackerrank.com/challenges/fraudulent-activity-notifications
+    /// </source>
     public class FradulentActivityNotice
     {
+        /// <summary>
+        /// It's an application of counting sort.
+        /// Since you need to find out the median number in trailing n days, imagine there's a time window with width of d sliding along the array.
+        /// Use the example: expenditure = [10, 20, 30, 40, 50] d = 3.
+        /// |10, 20, 30|, 40, 50
+        /// 10, |20, 30, 40|, 50
+        /// 10, 20, |30, 40, 50|
+        /// You need to find out the median number in this time window.
+        /// You don't need to really sort it and then get median number as it is time-consuming.
+        /// Just use the idea of counting sort to find out the number in the middle position.
+        /// </summary>
+        /// <param name="expenditure">An array that represents how much is spent for each day</param>
+        /// <param name="d">From which day, notification is started</param>
+        /// <returns>How many notifications are triggered</returns>
         public static int Solution(int[] expenditure, int d) {
             int notificationCount = 0;
             int max = expenditure[0];

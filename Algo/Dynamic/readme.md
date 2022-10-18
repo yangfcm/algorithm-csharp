@@ -27,3 +27,7 @@
 7. `AllConstruct.cs`
 
    Follow up the previous problem: return all the ways to construct the target string by concatenating elements of the strings array.
+
+8. `CommonChild.cs`
+
+   Find out the longest common 'child' string of two given strings.

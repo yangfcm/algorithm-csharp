@@ -37,4 +37,26 @@ Algorithms, Data Structure problems and solutions written in C#, including test 
 
 ## How to run
 
-Under project root directory: `dotnet test ./test` and see the test outcome.
+Under project root directory:
+
+1. Run all tests
+
+```
+dotnet test
+```
+
+2. Run a particular test
+
+```
+dotnet test --filter ClassName=Test.Algo.Arr.ArrayChunkTest
+```
+
+3. Run a set of tests that contain the keyword
+
+```
+# Run all test cases that in 'Greedy' directory
+dotnet test --filter ClassName~Greedy
+
+# Run test cases for ArrayChunk
+dotnet test --filter ClassName~ArrayChunk
+```

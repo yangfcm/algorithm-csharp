@@ -1,7 +1,4 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
-using System.Linq;
-using System;
 using Algo.Ds.Tree.Bst;
 
 namespace Test.Ds.Tree.Bst

@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Algo.Arr
 {
     /// <summary>
@@ -18,7 +22,7 @@ namespace Algo.Arr
         /// <param name="arr"></param>
         /// <param name="m"></param>
         /// <returns>The maximum sum of the subarray mod m.</returns>
-        public static long Solution1(long[] arr, int m)
+        public static long Solution1(long[] arr, long m)
         {
             long maxSum = 0;
             for (int i = 0; i < arr.Length; i++)
@@ -33,5 +37,39 @@ namespace Algo.Arr
             }
             return maxSum;
         }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="m"></param>
+        /// <returns>The maximum sum of the subarray mod m.</returns>
+        public static long Solution2(long[] arr, long m)
+        {
+            long maxSum = 0;
+            long minDiff = m;
+            long sum = 0;
+
+            var sumArr = new LinkedList<long[]>();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+                sumArr.AddLast(new long[] { i, sum % m });
+                maxSum = Math.Max(maxSum, sum % m);
+            }
+
+            var sortedSumArr = sumArr.OrderBy(sum => sum[1]).ToArray();
+
+            for (int i = 1; i < sortedSumArr.Length; i++)
+            {
+                if(sortedSumArr[i][1] > sortedSumArr[i-1][1] && sortedSumArr[i][0] < sortedSumArr[i-1][0])
+                {
+                    minDiff = Math.Min(minDiff, sortedSumArr[i][1] - sortedSumArr[i - 1][1]);
+                }
+            }
+            maxSum = Math.Max(maxSum, m - minDiff);
+            return maxSum;
+        }
+        
     }
 }

@@ -42,9 +42,10 @@ namespace Test.Algo.Arr
 
         [TestMethod]
         [DynamicData(nameof(DataSource))]
-        public void TestSolution(long[] arr, int m, int expected)
+        public void TestSolution(long[] arr, long m, long expected)
         {
             Assert.AreEqual(expected, MaxSubArrayModSum.Solution1(arr, m));
+            Assert.AreEqual(expected, MaxSubArrayModSum.Solution2(arr, m));
         }
     }
 }

@@ -39,11 +39,11 @@ namespace Algo.Assorted
         /// <returns>The minimum days required to produce the target items</returns>
         public static int Solution(int[] machines, int goal)
         {
-            int days = 0;
             int minMachine = machines.Min();
             int maxMachine = machines.Max();
             int minDays = goal * minMachine / machines.Length;
             int maxDays = goal * maxMachine / machines.Length;
+            int days = Math.Max(minDays, maxDays);
 
             while(true)
             {

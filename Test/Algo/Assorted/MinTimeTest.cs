@@ -7,6 +7,7 @@ namespace Test.Algo.Assorted
     public class MinTimeTest
     {
         [TestMethod]
+        [DataRow(new int[]{ 2, 2 }, 2, 2)]
         [DataRow(new int[]{ 2, 3 }, 5, 6)]
         [DataRow(new int[]{ 1, 3, 4 }, 10, 7)]
         [DataRow(new int[]{ 4, 5, 6 }, 12, 20)]

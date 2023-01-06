@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Algo.Mathematics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Test.Algo.Mathematic
+namespace Test.Algo.Mathematics
 {
     [TestClass]
     public class PermutationsTest

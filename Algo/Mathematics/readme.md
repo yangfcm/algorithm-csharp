@@ -14,3 +14,7 @@
 3. `IsPrime.cs`
 
    Test if a given number is a prime(质数)
+
+4. `Permutations.cs`
+
+   Return all the possible permutations of an array of numbers.

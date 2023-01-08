@@ -23,3 +23,7 @@
 6. `Weave.cs`
 
    "Weave" two queues
+
+7. `IsBalanced.cs`
+
+   Test if a string has balanced brackets.

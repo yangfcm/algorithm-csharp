@@ -27,3 +27,7 @@
 7. `IsBalanced.cs`
 
    Test if a string has balanced brackets.
+
+8. `LargestRectangle.cs`
+
+   Return the area of the largest rectangle in the histogram.

@@ -9,9 +9,9 @@ namespace Test.Algo.Assorted
   public class PyramidTest
   {
     private StringWriter sw;
-    private const string ExpectedOutputWith2 = " # \r\n###\r\n";
-    private const string ExpectedOutputWith3 = "  #  \r\n ### \r\n#####\r\n";
-    private const string ExpectedOutputWith4 = "   #   \r\n  ###  \r\n ##### \r\n#######\r\n";
+    private const string ExpectedOutputWith2 = " # \n###\n";
+    private const string ExpectedOutputWith3 = "  #  \n ### \n#####\n";
+    private const string ExpectedOutputWith4 = "   #   \n  ###  \n ##### \n#######\n";
 
     [TestInitialize]
     public void Setup()
